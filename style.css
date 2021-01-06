@@ -1,12 +1,78 @@
+@font-face   /* Police et couleur de la page */
+{
+    font-family:Raleway,Impact, "Arial Black", Arial, Verdana, sans-serif;
+    src:url(Police\ Raleway/)
+    color:#0065FC;
+{
+{
+
+}
+#Reservia  /* Logo */
+{
+    position:relative
+    height:0px;
+    width: 0px;
+}
+
+span
+{
+    font-style:italic; /* Ecriture en italique : "En plein centre ville ou en pleine nature " */ 
+}
+
+#hébergement /* Id : Lien section page */
+{
+    color:#DEEBFF;
+}
+
+#Activités /* Id : Lien section page */
+{
+    text-align:right;
+}
+
 p
 {
-    color: blue;
+    color:black;
 }
-h1
+.EM
 {
-    color:black
+    font-weight: italic;  /* "Plus de 500 logements sont disponibles dans cette ville" en italique */
 }
-h2
+
+.titre /* Texte "Trouver votre hébergement pour des vacances de rêves" en gras */
 {
-    color: blue;
+    font-weight:bold;
+}
+
+ul /* Filtre - "Navigation" aligné à gauche*/ 
+{
+    display:flex;
+    float:center; 
+}
+ol
+{
+    text-align:right; /* Main : Bloc Navigation -> "hébergement, activités et s'inscrire" :  texte aligné à droite */
+} 
+h3
+{
+    text-align: right;  /* Main  : Bloc "Les plus populaires" aligné à droite */
+}
+
+h4
+{
+    text-align:left; /* Footer : Bloc "A propos" et "Hébergements à Marseille "texte aligné à gauche */ 
+}
+
+h5
+{
+    text-align:center; /* Footer : Bloc "Nos hébergements" texte aligné au centre */ 
+}
+
+h6
+{
+    text-align:right; /*  Footer : Bloc "Assistance" texte aligné à droite */ 
+}
+
+footer
+{
+    background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
 }
