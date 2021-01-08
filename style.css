@@ -15,28 +15,32 @@ body,h1
     height:0px;
     width: 0px;
 }
-span
+
+#LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
-    font-style:italic; /* Ecriture en italique : "En plein centre ville ou en pleine nature " */ 
+    text align: right;
 }
 
 #hébergement /* Id : Lien section page */
 {
     color:#DEEBFF;
+    text-align: left;
+    justify-content: space-around;
 }
 
 #Activités /* Id : Lien section page */
 {
-    text-align:right;
+    text-align:left;
+    justify-content: space-around;
 }
 
 p
 {
     color:black;
 }
-.EM
+.Navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
 {
-    font-weight: italic;  /* "Plus de 500 logements sont disponibles dans cette ville" en italique */
+    text-align: right;
 }
 
 .titre /* Texte "Trouver votre hébergement pour des vacances de rêves" en gras */
@@ -44,19 +48,23 @@ p
     font-weight:bold;
 }
 
-ul /* Filtre - "Navigation" aligné à gauche*/ 
+.italic
 {
-    display:flex;
-    float:right; 
+    font-weight:italic; 
+    /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ 
+    /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
 }
-ol
+
+.Filtres /* Filtre - "Navigation" aligné à gauche*/ 
 {
-    text-align:right; /* Main : Bloc Navigation -> "hébergement, activités et s'inscrire" :  texte aligné à droite */
-} 
+    justify-content: space-around;
+    text-align:left; /*  Bloc Filtre -> "économiques, familial, romantique, animaux autorisés"*/
+}
+
 h2
-[
+{
     text-align:left;
-]
+}
 
 h3
 {
