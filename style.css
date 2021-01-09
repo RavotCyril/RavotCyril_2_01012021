@@ -2,45 +2,15 @@
 {
     font-family: "Raleway";
     src:url("Police Raleway/Raleway-Regular.ttf") format("truetype");
-{
+}
 body,h1
 {
     font-family:"Raleway";
-    color:#0065FC;
-
 }
+
 #Reservia  /* Logo */
 {
     position:relative
-    height:0px;
-    width: 0px;
-}
-
-#LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
-{
-    text align: right;
-}
-
-#hébergement /* Id : Lien section page */
-{
-    color:#DEEBFF;
-    text-align: left;
-    justify-content: space-around;
-}
-
-#Activités /* Id : Lien section page */
-{
-    text-align:left;
-    justify-content: space-around;
-}
-
-p
-{
-    color:black;
-}
-.Navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
-{
-    text-align: right;
 }
 
 .titre /* Texte "Trouver votre hébergement pour des vacances de rêves" en gras */
@@ -48,17 +18,50 @@ p
     font-weight:bold;
 }
 
-.italic
+.italic1
 {
     font-weight:italic; 
     /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ 
-    /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
 }
 
 .Filtres /* Filtre - "Navigation" aligné à gauche*/ 
 {
+    display:flex;
+}
+
+.navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
+{
+    text-align: right;
+    position: relative;
+}
+.italic2
+{
+    font-weight:italic;     /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
+}
+
+#hébergement /* Id : Lien section page */
+{
+    color:#DEEBFF;
+    text-align: left;
     justify-content: space-around;
-    text-align:left; /*  Bloc Filtre -> "économiques, familial, romantique, animaux autorisés"*/
+    position: relative;
+}
+
+#LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
+{
+    text align:right;
+}
+
+#Activités /* Id : Lien section page */
+{
+    text-align:left;
+    justify-content: space-around;
+    position: relative;
+}
+
+p
+{
+    color:black;
 }
 
 h2
@@ -73,20 +76,26 @@ h3
 
 h4
 {
-    text-align:left; /* Footer : Bloc "A propos" et "Hébergements à Marseille "texte aligné à gauche */ 
+    text-align:left; /* Footer : Bloc "Hébergements à Marseille "texte aligné à gauche */ 
+}
+#Apropos
+{
+    text-align:left;  /* Footer : Bloc "A propos " Texte aligné à gauchee */
 }
 
-h5
+#NosHebergements
 {
     text-align:center; /* Footer : Bloc "Nos hébergements" texte aligné au centre */ 
 }
 
-h6
+#Assistance
 {
-    text-align:right; /*  Footer : Bloc "Assistance" texte aligné à droite */ 
+    text-align:right /*  Footer : Bloc "Assistance" texte aligné à droite */ 
 }
 
 footer
 {
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
+    position:relative;
+    justify-content: space-around;
 }
