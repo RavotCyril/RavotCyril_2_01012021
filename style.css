@@ -80,7 +80,7 @@ h4
 }
 #Apropos
 {
-    text-align:left;  /* Footer : Bloc "A propos " Texte aligné à gauchee */
+    justify-content: space-around;  /* Footer : Bloc "A propos " Texte aligné à gauchee */
 }
 
 #NosHebergements
@@ -90,12 +90,12 @@ h4
 
 #Assistance
 {
-    text-align:right /*  Footer : Bloc "Assistance" texte aligné à droite */ 
+     justify-content: space-around /*  Footer : Bloc "Assistance" texte aligné à droite */ 
 }
 
 footer
 {
+    display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
     position:relative;
-    justify-content: space-around;
 }
