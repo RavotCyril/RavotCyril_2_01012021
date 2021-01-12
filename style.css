@@ -12,6 +12,7 @@ body,h1
 {
     position:relative
 }
+
 .Hebergements
 {
     background-color:rgba(0, 0, 0, 0.1); 
@@ -23,12 +24,15 @@ body,h1
 {
     background-color:rgba(255, 255, 255); 
     border-radius:10px;
-    font-weight:bold;
 }
 
 .titre /* Texte "Trouver votre hébergement pour des vacances de rêves" en gras */
 {
     font-weight:bold;
+}
+.Titrephoto
+{
+    font-weight:bold; /* Tout les attributs des photos en gras */
 }
 
 .italic
@@ -47,8 +51,8 @@ body,h1
 
 .navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
 {
-    text-align: right;
-    position: relative;
+    text-align:right;
+    position:relative;
 }
 
 #hébergement /* Id : Lien section page */
@@ -89,24 +93,25 @@ h4
 {
     text-align:left; /* Footer : Bloc "Hébergements à Marseille "texte aligné à gauche */ 
 }
-#Apropos
-{
-    justify-content: space-around;  /* Footer : Bloc "A propos " Texte aligné à gauchee */
-}
-
-#NosHebergements
-{
-    text-align:center; /* Footer : Bloc "Nos hébergements" texte aligné au centre */ 
-}
-
-#Assistance
-{
-     justify-content: space-around /*  Footer : Bloc "Assistance" texte aligné à droite */ 
-}
 
 footer
 {
+    justify-content: space-around;
     display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
-    position:relative;
+}
+
+.Apropos
+{
+    display: flex;  /* Footer : Bloc "A propos " Texte aligné à gauchee */
+}
+
+.NosHebergements
+{
+    display: flex; /* Footer : Bloc "Nos hébergements" texte aligné au centre */ 
+}
+
+.Assistance
+{
+    display: flex; /*  Footer : Bloc "Assistance" texte aligné à droite */ 
 }
