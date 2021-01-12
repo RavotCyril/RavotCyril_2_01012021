@@ -12,16 +12,32 @@ body,h1
 {
     position:relative
 }
+.Hebergements
+{
+    background-color:rgba(0, 0, 0, 0.1); 
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.Hebergementbis
+{
+    background-color:rgba(255, 255, 255); 
+    border-radius:10px;
+    font-weight:bold;
+}
 
 .titre /* Texte "Trouver votre hébergement pour des vacances de rêves" en gras */
 {
     font-weight:bold;
 }
 
-.italic1
+.italic
+
 {
     font-weight:italic; 
     /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ 
+    /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
+}
 }
 
 .Filtres /* Filtre - "Navigation" aligné à gauche*/ 
@@ -33,10 +49,6 @@ body,h1
 {
     text-align: right;
     position: relative;
-}
-.italic2
-{
-    font-weight:italic;     /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
 }
 
 #hébergement /* Id : Lien section page */
@@ -61,8 +73,7 @@ body,h1
 
 p
 {
-    color:black;
-}
+    color:black
 
 h2
 {
