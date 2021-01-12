@@ -7,52 +7,31 @@ body,h1
 {
     font-family:"Raleway";
 }
-
 #Reservia  /* Logo */
 {
-    position:relative
+    font-size:0,1Rem;
 }
-
-.Hebergements
-{
-    background-color:rgba(0, 0, 0, 0.1); 
-    border-radius:10px;
-    font-weight:bold;
-}
-
-.Hebergementbis
-{
-    background-color:rgba(255, 255, 255); 
-    border-radius:10px;
-}
-
 .titre /* Texte "Trouver votre hébergement pour des vacances de rêves" en gras */
 {
     font-weight:bold;
 }
-.Titrephoto
-{
-    font-weight:bold; /* Tout les attributs des photos en gras */
-}
-
-.italic
-
+.italic1
 {
     font-weight:italic; 
     /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ 
     /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
 }
-}
-
 .Filtres /* Filtre - "Navigation" aligné à gauche*/ 
 {
     display:flex;
+    list-style:none;
 }
-
 .navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
 {
-    text-align:right;
-    position:relative;
+    width:100%;
+    position: relative;
+    list-style:none;
+
 }
 
 #hébergement /* Id : Lien section page */
@@ -62,56 +41,50 @@ body,h1
     justify-content: space-around;
     position: relative;
 }
-
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
     text align:right;
 }
-
 #Activités /* Id : Lien section page */
 {
     text-align:left;
     justify-content: space-around;
     position: relative;
 }
-
 p
 {
-    color:black
-
+    color:black;
+}
 h2
 {
     text-align:left;
 }
-
 h3
 {
     text-align: right;  /* Main  : Bloc "Les plus populaires" aligné à droite */
 }
-
 h4
 {
     text-align:left; /* Footer : Bloc "Hébergements à Marseille "texte aligné à gauche */ 
 }
+#Apropos
+{
+    text-align:left;  /* Footer : Bloc "A propos " Texte aligné à gauche */
+    justify-content: space-around;  
+}
 
+#NosHebergements
+{
+    text-align:center; /*  Footer : Bloc "Nos hébergements" texte aligné au centre */ 
+}
+
+#Assistance
+{
+    text-align:right /*  Footer : Bloc "Assistance" texte aligné à droite */ 
+}
 footer
 {
-    justify-content: space-around;
-    display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
-}
-
-.Apropos
-{
-    display: flex;  /* Footer : Bloc "A propos " Texte aligné à gauchee */
-}
-
-.NosHebergements
-{
-    display: flex; /* Footer : Bloc "Nos hébergements" texte aligné au centre */ 
-}
-
-.Assistance
-{
-    display: flex; /*  Footer : Bloc "Assistance" texte aligné à droite */ 
-}
+    position:relative;
+    justify-content: space-around;
+} 
