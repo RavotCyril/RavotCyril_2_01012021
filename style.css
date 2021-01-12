@@ -3,17 +3,24 @@
     font-family: "Raleway";
     src:url("Police Raleway/Raleway-Regular.ttf") format("truetype");
 }
+
 body,h1
 {
     font-family:"Raleway";
 }
+
 #Reservia  /* Logo */
 {
-    font-size:0,1Rem;
+    width:100px;
 }
 .titre /* Texte "Trouver votre hébergement pour des vacances de rêves" en gras */
 {
     font-weight:bold;
+}
+.TitrePrincipale
+{
+    display:flex;
+}    
 }
 .italic1
 {
@@ -26,12 +33,22 @@ body,h1
     display:flex;
     list-style:none;
 }
+
+nav li {
+    display:table-cell;
+    margin-right:60px;
+    float:right;
+} /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste*/
+
+.filtre_li /* Filtre - "Navigation" aligné à gauche*/
+{
+    width: auto;
+    margin-right:30px;
+}
 .navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
 {
-    width:100%;
-    position: relative;
+    position:relative;
     list-style:none;
-
 }
 
 #hébergement /* Id : Lien section page */
@@ -43,12 +60,13 @@ body,h1
 }
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
+    Display:Flex;
     text align:right;
 }
 #Activités /* Id : Lien section page */
 {
+    display:flex;
     text-align:left;
-    justify-content: space-around;
     position: relative;
 }
 p
@@ -84,7 +102,7 @@ h4
 }
 footer
 {
+    display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
     position:relative;
-    justify-content: space-around;
 } 
