@@ -3,6 +3,10 @@
     font-family: "Raleway";
     src:url("Police Raleway/Raleway-Regular.ttf") format("truetype");
 }
+header
+{
+    display:block;
+}
 
 body,h1
 {
@@ -21,6 +25,9 @@ body,h1
 {
     display:flex;
 }    
+a:hover
+{
+    color:#0065FC
 }
 .italic1
 {
@@ -34,21 +41,42 @@ body,h1
     list-style:none;
 }
 
-nav li {
-    display:table-cell;
+nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste */
+ {
+    display:table-cell;  
     margin-right:60px;
     float:right;
-} /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste*/
+} 
 
 .filtre_li /* Filtre - "Navigation" aligné à gauche*/
 {
     width: auto;
     margin-right:30px;
+    text-decoration:none
 }
 .navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
 {
     position:relative;
     list-style:none;
+    text-decoration:none
+}
+.fas.fa-star {
+    color : gray;
+}
+.blue, .fas.fa-star.active
+{
+    color:#0065FC;
+    text-decoration:none
+}
+.decoration1
+{
+    text-decoration:none;
+}
+.decoration2
+{
+    text-decoration:none;
+    border-top:solid 3px #0065FC;
+    padding:25%;
 }
 
 #hébergement /* Id : Lien section page */
@@ -88,12 +116,12 @@ h4
 #Apropos
 {
     text-align:left;  /* Footer : Bloc "A propos " Texte aligné à gauche */
-    justify-content: space-around;  
 }
 
-#NosHebergements
+#NosHebergements 
 {
-    text-align:center; /*  Footer : Bloc "Nos hébergements" texte aligné au centre */ 
+    text align:center;  /*  Footer : Bloc "Nos hébergements" texte aligné au centre */ 
+}
 }
 
 #Assistance
@@ -105,4 +133,4 @@ footer
     display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
     position:relative;
-} 
+}
