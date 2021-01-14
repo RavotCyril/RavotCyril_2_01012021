@@ -51,7 +51,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 }    
 .italic
 {
-    font-weight:italic; 
+    font-style:italic;
     /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ 
     /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
 }
@@ -113,8 +113,7 @@ figure
     Display:Flex;
     text-align:right;
     position:relative;
-    max width:;
-    width:;
+    width:900px;
     height:auto;
 }
 #ActivitesaMarseille /* Id : Lien section page */
@@ -122,8 +121,7 @@ figure
     display:flex;
     text-align:left;
     position: relative;
-    max width:;
-    width:;
+    width:2600px;
     height:auto;
 }
 p
@@ -150,7 +148,6 @@ h4
 #NosHebergements 
 {
     text-align:center;  /*  Footer : Bloc "Nos hébergements" texte aligné au centre */ 
-}
 }
 
 #Assistance
