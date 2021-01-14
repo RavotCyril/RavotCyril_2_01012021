@@ -93,21 +93,38 @@ figure
 {
     background-color:#F2F2F2;
     display:flex;
-    text-align:left;
+    flex-wrap:wrap;
     position:relative;
+    width:1768px;
+    height:auto;
 }
+.Image
+{
+    background-color:#F2F2F2;
+    position:relative;
+    width:234px;
+    height:auto;
+
+}
+
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
     background-color:#F2F2F2;
     Display:Flex;
     text-align:right;
     position:relative;
+    max width:;
+    width:;
+    height:auto;
 }
 #ActivitesaMarseille /* Id : Lien section page */
 {
     display:flex;
     text-align:left;
     position: relative;
+    max width:;
+    width:;
+    height:auto;
 }
 p
 {
@@ -145,4 +162,5 @@ footer
     display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
     position:relative;
+    justify-content: space-around;
 }
