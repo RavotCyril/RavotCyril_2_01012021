@@ -19,7 +19,6 @@ body,h1
 }
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste */
 {
-    display:table-cell;  
     margin-right:60px;
     float:right;
 } 
@@ -29,10 +28,10 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     list-style:none;
     text-decoration:none
 }
-.blue, .fas.fa-star.active
+.blue
 {
     color:#0065FC;
-    text-decoration:none
+    text-decoration:none;
 }
 .decoration1
 {
@@ -42,9 +41,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     text-decoration:none;
     border-top:solid 3px #0065FC;
-    padding:25%;
+    padding:25%;}
 }
-
 .TitrePrincipale
 {
     display:flex;
@@ -70,9 +68,9 @@ a:hover
 
 .filtre_li /* Filtre - "Navigation" aligné à gauche*/
 {
-    width: auto;
     margin-right:30px;
     text-decoration:none
+    border-style:2px solid;
 }
 
 .fas.fa-star {
@@ -82,12 +80,21 @@ a:hover
 {
     font-weight:bold;
 }
-figure 
+
+.hebergement
 {
     border:1px #cccccc solid;
-    padding:15px;
+    border-radius:40px;
+    margin-block-start:1em;
+    margin-block-end:1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.Hotel
+{
+    border:1px #cccccc solid;
     margin:auto;
-    border-radius:50px;
+    border-radius:40px;
 }
 #HebergementaMarseille/* Id : Lien section page */
 {
@@ -95,35 +102,50 @@ figure
     display:flex;
     flex-wrap:wrap;
     position:relative;
-    width:1768px;
+    width:1800px;
     height:auto;
 }
 .Image
 {
-    background-color:#F2F2F2;
-    position:relative;
-    width:234px;
-    height:auto;
-
+    border:1px #cccccc solid;
+    border-radius:50px;
+    margin-block-start:1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
 }
-
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
     background-color:#F2F2F2;
-    Display:Flex;
+    display:flex;
     text-align:right;
     position:relative;
-    width:900px;
+    width:1000px;
     height:auto;
+}
+#Populaire
+{
+    border:1px #cccccc solid;
+    margin:auto;
+    border-radius:40px;
 }
 #ActivitesaMarseille /* Id : Lien section page */
 {
     display:flex;
+    flex-wrap:wrap;
     text-align:left;
-    position: relative;
+    position:relative;
     width:2600px;
     height:auto;
 }
+#Activites
+{
+    background-color:#F2F2F2;
+    position:relative;
+    width:100px;
+    height:auto;
+}
+
 p
 {
     color:black;
