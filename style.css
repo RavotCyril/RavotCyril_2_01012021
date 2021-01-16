@@ -33,11 +33,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     color:#0065FC;
     text-decoration:none;
 }
-.decoration1
-{
-    text-decoration:none;
-}
-.decoration2
+
+.decoration
 {
     text-decoration:none;
     border-top:solid 3px #0065FC;
@@ -57,6 +54,11 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 a:hover
 {
     color:#0065FC
+}
+
+.Filtres a
+{
+    text-decoration:none;
 }
 
 .Filtres /* Filtre - "Navigation" aligné à gauche*/ 
