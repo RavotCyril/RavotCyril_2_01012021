@@ -72,7 +72,6 @@ a:hover
 {
     margin-right:30px;
     text-decoration:none
-    border-style:2px solid;
 }
 
 .fas.fa-star {
@@ -92,6 +91,11 @@ a:hover
     margin-inline-start: 40px;
     margin-inline-end: 40px;
 }
+img
+{
+    width:100%;
+    height:auto;
+}
 .Hotel
 {
     border:1px #cccccc solid;
@@ -104,40 +108,31 @@ a:hover
     display:flex;
     flex-wrap:wrap;
     position:relative;
-    width:1800px;
-    height:auto;
+    width:800px;
+    height:682px;
 }
-.Image
+.Encadrement, .Populaire
 {
-    border:1px #cccccc solid;
-    border-radius:50px;
-    margin-block-start:1em;
-    margin-block-end: 1em;
-    margin-inline-start: 1px;
-    margin-inline-end: 1px;
+    width:22%;
+    height:40%;
+    border:1px solid grey;
+    border-radius:5%;
 }
+
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
     background-color:#F2F2F2;
-    display:flex;
-    text-align:right;
-    position:relative;
     width:1000px;
     height:auto;
 }
-#Populaire
-{
-    border:1px #cccccc solid;
-    margin:auto;
-    border-radius:40px;
-}
+
 #ActivitesaMarseille /* Id : Lien section page */
 {
     display:flex;
     flex-wrap:wrap;
-    text-align:left;
+    float:left;
     position:relative;
-    width:2600px;
+    width:100%;
     height:auto;
 }
 #Activites
@@ -154,11 +149,14 @@ p
 }
 h2
 {
-    text-align:left;
+    width:100%;
+    height:50px;
+    margin-bottom:5px;
+    margin-top:5px;
 }
 h3
 {
-    text-align: right;  /* Main  : Bloc "Les plus populaires" aligné à droite */
+      /* Main  : Bloc "Les plus populaires" aligné à droite */
 }
 h4
 {
