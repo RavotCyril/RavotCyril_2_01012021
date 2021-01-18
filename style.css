@@ -1,6 +1,6 @@
-@font-face   /* Police et couleur de la page */
+@font-face /* Police et couleur de la page */
 {
-    font-family: "Raleway";
+    font-family:"Raleway";
     src:url("Police Raleway/Raleway-Regular.ttf") format("truetype");
 }
 header
@@ -11,6 +11,7 @@ header
 body,h1
 {
     font-family:"Raleway";
+    font-size:12px;
 }
 
 #Reservia  /* Logo */
@@ -38,24 +39,50 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     text-decoration:none;
     border-top:solid 3px #0065FC;
-    padding:25%;}
+    padding:25%;
 }
+
 .TitrePrincipale
 {
     display:flex;
 }    
 .italic
 {
-    font-style:italic;
-    /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ 
-    /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
+    font-style:italic; /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
+    width:450px;
+    height:14px;
 }
-
+.IconLocalisation
+{
+    border:1,5px #F2F2F2 solid;
+    border-radius:15px 15px 15px 15px;
+    width:365px;
+    height:52px;
+}
+.IconLocalisation i
+{
+    border:1px #F2F2F2 solid;
+    background-color:#F2F2F2;
+    border-width:20px;
+    border-radius:15px 0px 0px 15px;
+}
+.IconLocalisation input
+{
+    border:1px #F2F2F2 solid;
+    height:52px;
+}
+.backgroundBlue
+{
+    background-color: #0065FC;
+    border:25px #F2f2F2 solid;
+    border-radius: 0px 15px 15px 0px;
+    height:52px;
+    color:white;
+}
 a:hover
 {
-    color:#0065FC
+    color:#0065FC;
 }
-
 .Filtres a
 {
     text-decoration:none;
@@ -66,32 +93,89 @@ a:hover
     display:flex;
     list-style:none;
     text-decoration:none;
+    align-items:center;
+    padding-left:0px;
+    font-weight:bold;
 }
-
-.filtre_li /* Filtre - "Navigation" aligné à gauche*/
+.filtre_li
 {
-    margin-right:30px;
-    text-decoration:none
+    padding-right:35px;
 }
 
-.fas.fa-star {
-    color : gray;
+.filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises
+{
+    border:10px #F2F2F2 solid;
+    border-width: 3px 3px 3px 0px;
+    border-radius: 25px 25px 25px 25px;
+    margin-right:45px;
+    color:#0065FC;
 }
-.titre /* Texte Tous les titres de la page "en gras" */
+.filtre_li-Economiques i
+{
+    border:10px #d6e7FF solid;
+    border-radius:17px 17px 17px 17px;
+    color:#0065FC;
+    background-color:#d6e7FF;
+}
+.filtre_li-Familial i
+{
+    border:10px #d6e7FF solid;
+    border-radius:15px 15px 15px 15px;
+    color:#0065FC;
+    background-color:#d6e7FF;
+}
+.filtre_li-Romantique i
+{
+    border:10px #d6e7FF solid;
+    border-radius:15px 15px 15px 15px;
+    color:#0065FC;
+    background-color:#d6e7FF;
+}
+.filtre_li-AnimauxAutorises i
+{
+    border:10px #d6e7FF solid;
+    border-radius:15px 15px 15px 15px;
+    color:#0065FC;
+    background-color:#d6e7FF;
+}
+
+.fas.fa-star
+{
+    color:#d1d1d2;
+}
+.fas.fa-star.active
+{
+    color: #0065FC;
+}
+.bold /* Texte Tous les titres de la page "en gras" */
+{
+    font-weight:bold;
+}
+.bold2
 {
     font-weight:bold;
 }
 
 img
 {
-    width:100%;
+    width:50%;
     height:auto;
 }
-.Hotel
+.IconInformation
 {
-    border:1px #cccccc solid;
-    margin:auto;
-    border-radius:40px;
+    display:flex;
+    align-items:center;
+    color:#0065FC;
+    background-color: white;
+}
+.IconInformation i
+{
+    border:1px #f2f2f2 solid;
+    border-radius:100%;
+    margin-left:15px;
+    margin-right:15px;
+    width:19px;
+    text-align:center;
 }
 .BlocHergementetPopulaire
 {
@@ -107,7 +191,7 @@ img
     height:auto;
     margin-right:20px;
 }
-.Encadrement, .Populaire, .Activites
+.Hebergement, .Populaire, .Activites
 {
     width:20%;
     height:25%;
@@ -141,21 +225,18 @@ img
     height:auto;
     margin-top:300px;
 }
-.Encadrement
+.Hebergement
 {
     width:20%;
-    height:20%;
+    height:25%;
     border:1px solid grey;
     border-radius:5%;
 }
-.Populaire
-{
-    float:right;
-}
+
 .Populaire
 {
     width:60%;
-    height:17%;
+    height:25%;
     border:1px solid grey;
     border-radius:5%;
 }
@@ -172,6 +253,7 @@ p
 {
     color:black;
 }
+
 h2
 {
     width:100%;
@@ -188,6 +270,7 @@ h4
 }
 h4 /* Footer : Bloc "Hébergements à Marseille "texte aligné à gauche */ 
 }
+
 #Apropos
 {
     text-align:left;  /* Footer : Bloc "A propos " Texte aligné à gauche */
