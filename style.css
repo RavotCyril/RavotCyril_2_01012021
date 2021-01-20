@@ -254,77 +254,99 @@ a:hover
 }
 #ActivitesaMarseille .Activites-VieuxPort img
 {
-    width:100%;
+    width:80%;
     height:90%;
 }
 #ActivitesaMarseille .Activites-FortDePomegues img
 {
-    width:100%;
-    height:30%;
+    width:80%;
+    height:85%;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img
 {
-    width:100%;
-    height:20%;
+    width:80%;
+    height:75%;
 }
 #ActivitesaMarseille .Activites-ParcNationalDesCalanques img
 {
-    width:100%;
-    height:90%;
+    width:80%;
+    height:95%;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img
 {
-    width:100%;
-    height:30%;
+    width:80%;
+    height:85%;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img
 {
-    width:100%;
-    height:30%;
+    width:80%;
+    height:85%;
 }
 #ActivitesaMarseille /* Id : Lien section page */
 {
+    display:flex;
     width:1583px;
-    height:532px;
+    height:800px;
 }
-
+.colone1
+{
+    width:15%;
+    height:90%;
+}
+.colone2
+{
+    display:block
+    height:90%;
+    margin-left:10px;
+}
+.colone3
+{
+    width:15%;
+    height:90%;
+    margin-left:50px;
+}
+.colone4
+{
+    width:15%;
+    height:90%;
+    margin-left:50px;
+}
 .Activites-VieuxPort
 {
-    display:flex;
-    width:100%;
-    height:90%;
+    width:80%;
+    height:95%;
     border:1px solid grey;
 
 }
 .Activites-FortDePomegues
 {
-    width:100%;
-    height:30%;
+    width:80%;
+    height:70%;
     border:1px solid grey;
 
 }
 .Activites-IlesDuFrioul
 {
-    width:100%;
-    height:20%;
+    width:80%;
+    height:25%;
     border:1px solid grey;
 }
 .Activites-ParcNationalDesCalanques
 {
-    width:100%;
-    height:90%;
+    width:80%;
+    height:95%;
     border:1px solid grey;
 }
 .Activites-NotreDameDeLaGarde
 {
-    width:100%;
-    height:30%;
+    width:80%;
+    height:45%;
     border:1px solid grey;
 }
 .Activites-ParcLongchamp
 {
-    width:100%;
-    height:30%;
+    width:80%;
+    height:50%;
     border:1px solid grey;
 }
 p
@@ -340,17 +362,10 @@ h1
 
 h2
 {
-    width:100%;
 }
 h3
 {
-    width:100%;
-}
-h4
-{
-    width:100%;
-}
-h4 /* Footer : Bloc "Hébergements à Marseille "texte aligné à gauche */ 
+    width:100%; /* Footer :  "Titres h3- A propos, Nos hebergements, Assistance" */ 
 }
 
 #Apropos
