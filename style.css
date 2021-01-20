@@ -8,10 +8,9 @@ header
     display:block;
 }
 
-body,h1
+body,
 {
     font-family:"Raleway";
-    font-size:12px;
 }
 
 #Reservia  /* Logo */
@@ -49,10 +48,6 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     color:black;
 }
 
-.TitrePrincipale
-{
-    display:flex;
-}    
 .italic
 {
     font-style:italic; /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
@@ -61,6 +56,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 }
 .IconLocalisation
 {
+    display:inline-flex;
     border:1,5px #F2F2F2 solid;
     border-radius:15px 15px 15px 15px;
     width:365px;
@@ -70,7 +66,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     border:1px #F2F2F2 solid;
     background-color:#F2F2F2;
-    border-width:20px;
+    border-width:18px;
     border-radius:15px 0px 0px 15px;
 }
 .IconLocalisation input
@@ -81,11 +77,12 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 .backgroundBlue
 {
     background-color: #0065FC;
-    border:25px #F2f2F2 solid;
-    border-radius: 0px 15px 15px 0px;
-    height:52px;
+    font-weight:bold;
     color:white;
+    border-radius: 0rem 1.1rem 1.1rem 0rem;
+    padding:0 1.3rem 0rem 1.0rem;
 }
+
 a:hover
 {
     color:#0065FC;
@@ -101,15 +98,13 @@ a:hover
 {
     display:flex;
     list-style:none;
-    text-decoration:none;
     align-items:center;
     padding-left:0px;
     font-weight:bold;
-    color:black;
 }
 .filtre_li
 {
-    padding-right:35px;
+    padding-right:25px;
 }
 
 .filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises
@@ -118,6 +113,8 @@ a:hover
     border-width: 3px 3px 3px 0px;
     border-radius: 25px 25px 25px 25px;
     margin-right:45px;
+    padding:0px 15px 0px 0;
+
 }
 .filtre_li-Economiques i
 {
@@ -133,6 +130,7 @@ a:hover
     color:#0065FC;
     background-color:#d6e7FF;
 }
+
 .filtre_li-Romantique i
 {
     border:10px #d6e7FF solid;
@@ -140,6 +138,7 @@ a:hover
     color:#0065FC;
     background-color:#d6e7FF;
 }
+
 .filtre_li-AnimauxAutorises i
 {
     border:10px #d6e7FF solid;
@@ -152,18 +151,22 @@ a:hover
     display:inline-block;
     margin-left:20px;
 }
+
 .fas.fa-star
 {
     color:#d1d1d2;
 }
+
 .fas.fa-star.active
 {
     color: #0065FC;
 }
+
 .bold1
 {
     font-weight:bold;
 }
+
 .bold2 /* Texte Tous les titres de la page "en gras" */
 {
     font-weight:bold;
@@ -172,22 +175,6 @@ a:hover
 .Alignement
 {
     margin-left:15px;
-}
-
-#HebergementaMarseille .Hebergement img
-{
-    width:100%;
-    height:60%;
-}
-#LesPlusPopulaires .Populaire img
-{
-    width:33%;
-    height:90%;
-}
-#ActivitesaMarseille .Activites img
-{
-    width:50%;
-    height:auto;
 }
 
 .IconInformation
@@ -210,24 +197,25 @@ a:hover
 {
     display:flex;
 }
+#HebergementaMarseille .Hebergement img
+{
+    width:100%;
+    height:60%;
+}
 #HebergementaMarseille/* Id : Lien section page */
 {
     background-color:#F2F2F2;
-    display:flex;
-    flex-wrap:wrap;
-    position:relative;
     width:1100px;
     height:1000px;
     margin-right:20px;
 }
-.Hebergement
+#HebergementaMarseille .content 
 {
-    width:80%;
-    height:25%;
-    border:1px solid grey;
-    border-radius:5%;
+    display:flex;
+    flex-wrap:wrap;
 }
-.Hebergement, .Populaire, .Activites
+
+.Hebergement
 {
     width:20%;
     height:25%;
@@ -235,6 +223,11 @@ a:hover
     border-radius:5%;
 }
 
+#LesPlusPopulaires .Populaire img
+{
+    width:33%;
+    height:90%;
+}
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
     display:flex;
@@ -250,6 +243,8 @@ a:hover
     height:20%;
     border:1px solid grey;
     border-radius:5%;
+    overflow:hidden;
+
 }
 
 .iconPopulaire
@@ -257,29 +252,90 @@ a:hover
     position:relative; 
     margin-right:150px;
 }
-
+#ActivitesaMarseille .Activites-VieuxPort img
+{
+    width:100%;
+    height:90%;
+}
+#ActivitesaMarseille .Activites-FortDePomegues img
+{
+    width:100%;
+    height:30%;
+}
+#ActivitesaMarseille .Activites-IlesDuFrioul img
+{
+    width:100%;
+    height:20%;
+}
+#ActivitesaMarseille .Activites-ParcNationalDesCalanques img
+{
+    width:100%;
+    height:90%;
+}
+#ActivitesaMarseille .Activites-NotreDameDeLaGarde img
+{
+    width:100%;
+    height:30%;
+}
+#ActivitesaMarseille .Activites-ParcLongchamp img
+{
+    width:100%;
+    height:30%;
+}
 #ActivitesaMarseille /* Id : Lien section page */
 {
-    display:flex;
-    flex-wrap:wrap;
-    position:relative;
     width:1583px;
-    height:auto;
-    margin-top:300px;
+    height:532px;
 }
 
-.Activites
+.Activites-VieuxPort
 {
     display:flex;
-    flex-wrap:wrap;
-    width:20%;
-    height:35%;
+    width:100%;
+    height:90%;
     border:1px solid grey;
-    border-radius:5%;
+
+}
+.Activites-FortDePomegues
+{
+    width:100%;
+    height:30%;
+    border:1px solid grey;
+
+}
+.Activites-IlesDuFrioul
+{
+    width:100%;
+    height:20%;
+    border:1px solid grey;
+}
+.Activites-ParcNationalDesCalanques
+{
+    width:100%;
+    height:90%;
+    border:1px solid grey;
+}
+.Activites-NotreDameDeLaGarde
+{
+    width:100%;
+    height:30%;
+    border:1px solid grey;
+}
+.Activites-ParcLongchamp
+{
+    width:100%;
+    height:30%;
+    border:1px solid grey;
 }
 p
 {
     color:black;
+}
+
+h1
+{
+    font-family:"Raleway";
+    font-size:1,4em;
 }
 
 h2

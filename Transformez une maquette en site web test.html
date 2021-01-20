@@ -13,7 +13,6 @@
             <div>
                 <img src="images/logo.png" alt="logo du site" id="Reservia">
             </div>
-            <div>
               <nav>
                 <ul class="navigation">
                   <li><a class="blue" href="#">S'inscrire</a></li>
@@ -21,15 +20,12 @@
                   <li><a class="decoration" href="#BlocHergementetPopulaire">Hébergements</a></li>    
                 </ul>
                </nav>
-            </div>
-            <div>
-                <h1 class="TitrePrincipale">Trouver votre hébergement pour des vacances de rêves</h1>
+                <h1>Trouver votre hébergement pour des vacances de rêves</h1>
                   <p class="italic"><span>En plein centre ville ou en pleine nature</span></p>
-            </div>
             <div class=IconLocalisation>
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="search" id="site-search" name="q>
-                aria-describedby=" class="bold" placeholder="Marseille, France">
+                aria-describedby=" placeholder="Marseille, France">
                 <input class="backgroundBlue" type="submit" name="recherche" value="Rechercher"/>
             </div>                  
             <div>
@@ -45,10 +41,11 @@
                 </div>
             </div>
         </header> 
-           <div class="BlocHergementetPopulaire">
-            <section id="HebergementaMarseille">
+          <section class="BlocHergementetPopulaire">
+            <main id="HebergementaMarseille">
                   <h2>Hébergement à Marseille</h2>
-                    <figure class=Hebergement>
+                  <div class="content">
+                    <figure class="Hebergement">
                         <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge cannebiere">
                         <figcaption class=Alignement><p class="bold1">Auberge La Cannebière</p>Nuit à partir de 25€<br><br>
                         <i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active "></i><i class="fas fa-star disabled"></i></figcaption>
@@ -78,9 +75,10 @@
                         <figcaption class=Alignement><p class="bold1">Hôtel chez Amina</p>Nuit à partir de 96€ <br><br>
                         <i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i></figcaption>
                     </figure>
-            </section>
-            <section id="LesPlusPopulaires">
-                      <h3>Les plus populaires <span class= "iconPopulaire"> <i class="fas fa-chart-line"></i></span></h3>
+                  </div>
+            </main>
+              <aside id="LesPlusPopulaires">
+                      <h2>Les plus populaires <span class= "iconPopulaire"> <i class="fas fa-chart-line"></i></span></h2>
                     <figure class="Populaire">
                       <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="5etoiles">
                       <p class="bold2">Hôtel le soleil du<br>matin<br><br>Nuit à partir de 128€<br><br><br><br>
@@ -96,34 +94,42 @@
                       <p class="bold2">Hôtel Tout bleu et<br>blanc<br><br>Nuit à partir de 68€<br><br><br><br>
                       <i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star active"></i><i class="fas fa-star"></i></p>
                     </figure>
-            </section>
-          </div> 
+              </aside>
+            </section> 
             <section id="ActivitesaMarseille">
-                  <h4>Activités à Marseille</h4>
-                    <figure class="Activites">
-                      <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Vieux Port">
+                  <h2>Activités à Marseille</h2>
+                  <div class="Activites-VieuxPort">
+                    <figure class="Activites-VieuxPort">
+                      <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                       <figcaption><p class="bold2">Vieux Port</p></figcaption>
                     </figure>
-                    <figure class="Activites">
-                      <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Fot de pomègues">
-                      <figcaption><p class="bold2">Fot de pomègues</p></figcaption>
+                  </div> 
+                  <div class="Activites-FortDePomegues"> 
+                    <figure class="Activites-FortDePomegues">
+                      <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fot de pomègues">
+                      <figcaption><p class="bold2">Fort de pomègues</p></figcaption>
                     </figure>
-                    <figure class="Activites">
-                      <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Îles du Frioul">
+                    <figure class="Activites-IlesDuFrioul">
+                      <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                       <figcaption><p class="bold2">Îles du Frioul</p></figcaption>
                     </figure>
-                    <figure class="Activites">
-                      <figcaption><img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc National des Calanques"></figcaption>
-                      <p class="bold2"> Parc National des Calanques</p>
+                  </div> 
+                  <div class="Activites-ParcNationalDesCalanques" > 
+                    <figure class="Activites-ParcNationalDesCalanques">
+                      <figcaption><img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"></figcaption>
+                      <p class="bold2">Parc National des Calanques</p>
                     </figure>
-                    <figure class="Activites">
-                      <figcaption><img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Notre-Dame-De-La-Garde"></figcaption>
+                  <div> 
+                  <div class="Activites-NotreDameDeLaGarde">
+                    <figure class="Activites-NotreDameDeLaGarde">
+                      <figcaption><img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg alt="Notre-Dame-De-La-Garde"></figcaption>
                       <p class="bold2">Notre-Dame-De-La-Garde</p>
                     </figure>
-                    <figure class="Activites">
-                      <figcaption><img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Parc Longchamp"></figcaption>
+                    <figure class="Activites-ParcLongchamp">
+                      <figcaption><img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"></figcaption>
                       <p class="bold2">Parc Longchamp</p>
                     </figure>
+                  </div>
            </section>
           <footer>
                 <div id="Apropos">
