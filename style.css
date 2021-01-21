@@ -197,6 +197,7 @@ a:hover
 {
     display:flex;
     margin-bottom:75px;
+    margin-top:25px;
 }
 #HebergementaMarseille .Hebergement img
 {
@@ -219,20 +220,25 @@ a:hover
 .Hebergement
 {
     width:25%;
-    height:25%;
+    height:auto;
     border:1px solid grey;
-    border-radius:5%;
+    border-radius:10%;
+    overflow:hidden;
+
+}
+.AfficherPlus
+{
+    font-weight:bold;
+    margin-left:50px;
 }
 
 #LesPlusPopulaires .Populaire img
 {
     width:33%;
-    height:90%;
+    height:auto;
 }
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
-    display:flex;
-    flex-direction:column;
     background-color:#F2F2F2;
     width:483px;
     height:1000px;
@@ -240,18 +246,19 @@ a:hover
 .Populaire
 {
     display:flex;
+    flex-direction:column;
+    background-color:white;
     width:80%;
     height:20%;
-    border:1px solid grey;
-    border-radius:5%;
+    border:10px solid white;
+    border-radius:10%;
     overflow:hidden;
-
 }
 
 .iconPopulaire
 {
-    position:relative; 
-    margin-right:150px;
+    float:right;
+    margin-right:45px;
 }
 #ActivitesaMarseille .Activites-VieuxPort img
 {
@@ -318,48 +325,55 @@ a:hover
     width:80%;
     height:97.5%;
     border:1px solid grey;
+    border-radius:4%;
     margin:none;
-
+    overflow:hidden;
 }
 .Activites-FortDePomegues
 {
     width:80%;
     height:45%;
     border:1px solid grey;
+    border-radius:4%;
     margin:none;
-    
+    overflow:hidden;
+
 }
 .Activites-IlesDuFrioul
 {
     width:80%;
     height:25%;
     border:1px solid grey;
+    border-radius:4%;
     margin:none;
-
+    overflow:hidden;
 }
 .Activites-ParcNationalDesCalanques
 {
     width:80%;
     height:97.5%;
     border:1px solid grey;
+    border-radius:4%;
     margin:none;
-
+    overflow:hidden;
 }
 .Activites-NotreDameDeLaGarde
 {
     width:100%;
     height:45%;
     border:1px solid grey;
+    border-radius:4%;
     margin:none;
-
+    overflow:hidden;
 }
 .Activites-ParcLongchamp
 {
     width:100%;
     height:50%;
     border:1px solid grey;
+    border-radius:4%;
     margin:none;
-
+    overflow:hidden;
 }
 p
 {
