@@ -146,11 +146,6 @@ a:hover
     color:#0065FC;
     background-color:#d6e7FF;
 }
-.MarginStar
-{
-    display:inline-block;
-    margin-left:20px;
-}
 
 .fas.fa-star
 {
@@ -260,7 +255,13 @@ a:hover
     float:right;
     margin-right:45px;
 }
-.MargeTexteHebergementEtPopulaire
+.MargePopulaire
+{
+    display:flex;
+    flex-direction:column;
+    margin-left:25px;
+}
+.MargeHebergement
 {
     margin-left:25px;
 }
