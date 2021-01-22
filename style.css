@@ -5,19 +5,18 @@
 }
 header
 {
-    display:block;
     width:1564px;
-    height:466px;
+    height:350px;
 }
 
-body
+body,h1
 {
     font-family:"Raleway";
 }
 
 #Reservia  /* Logo */
 {
-    width:100px;
+    width:150px;
 }
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste */
 {
@@ -57,7 +56,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     font-style:italic; /* Ecriture en italique:"En plein centre ville ou en pleine nature  */ /* Ecriture en italique "Plus de 500 logements sont disponibles dans cette ville" en italique" */
     width:450px;
-    height:14px;
+    height:20px;
 }
 .IconLocalisation
 {
@@ -109,47 +108,30 @@ a:hover
 }
 .filtre_li
 {
-    padding-right:25px;
+    padding-right:22px;
 }
 
 .filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises
 {
     border:10px solid #F2F2F2;
-    border-width: 3px 3px 3px 0px;
-    border-radius: 25px 25px 25px 25px;
-    margin-right:45px;
+    border-width:2px 2px 2px 0px;
+    border-radius:25px 25px 25px 25px;
+    margin-right:25px;
     padding:0px 15px 0px 0;
+    overflow:hidden;
 
 }
-.filtre_li-Economiques i
+.filtre_li-Familial
 {
-    border:10px solid #d6e7FF;
-    border-radius:17px 17px 17px 17px;
-    color:#0065FC;
-    background-color:#d6e7FF;
+    margin-left:10px;
 }
-.filtre_li-Familial i
+.filtre_li-Economiques i, .filtre_li-Familial i, .filtre_li-Romantique i, .filtre_li-AnimauxAutorises i
 {
-    border:10px solid #d6e7FF;
-    border-radius:15px 15px 15px 15px;
+    border:1rem solid #d6e7FF;
+    border-radius:100%;
     color:#0065FC;
     background-color:#d6e7FF;
-}
-
-.filtre_li-Romantique i
-{
-    border:10px solid #d6e7FF;
-    border-radius:15px 15px 15px 15px;
-    color:#0065FC;
-    background-color:#d6e7FF;
-}
-
-.filtre_li-AnimauxAutorises i
-{
-    border:10px solid #d6e7FF;
-    border-radius:15px 15px 15px 15px;
-    color:#0065FC;
-    background-color:#d6e7FF;
+    margin-right:10px;
 }
 
 .fas.fa-star
@@ -213,6 +195,7 @@ a:hover
     width:1022px;
     height:689px;
     margin-right:51.5px;
+    margin-bottom:69px;
 }
 #HebergementaMarseille .content 
 {
@@ -260,7 +243,7 @@ a:hover
 .iconPopulaire
 {
     float:right;
-    margin-right:45px;
+    margin-right:35px;
 }
 .MargePopulaire
 {
@@ -389,13 +372,6 @@ p
 {
     color:black;
 }
-
-h1
-{
-    font-family:"Raleway";
-    font-size:2.5rem;
-}
-
 h2
 {
     margin-left:40px;
