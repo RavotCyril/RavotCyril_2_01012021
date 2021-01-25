@@ -22,6 +22,10 @@ body,h1
 {
     display:flex;
 }
+nav
+{
+    width:1483px;
+}
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste */
 {
     margin-right:60px;
@@ -29,7 +33,6 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 } 
 .navigation /* Menu navigation aligné en haut à droite avec les liens des sections " activitées " et " Hébergement "  */
 {
-    position:relative;
     list-style:none;
     text-decoration:none;
     padding-left:0px;
@@ -40,19 +43,23 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     color:#0065FC;
     text-decoration:none;
 }
-
-.decoration
+.decoration1
 {
     text-decoration:none;
-    border-top:3px solid #0065FC;
-    padding:14px;
-    padding-top:54px;
-    color:#0065FC;
+    color:black;
 }
 .decoration2
 {
     text-decoration:none;
-    font-style:italic;
+    border-top:3px solid #0065FC;
+    padding:20px;
+    padding-top:54px;
+    color:#0065FC;
+}
+.decoration3
+{
+    text-decoration:none;
+    font-weight:bold;
     color:black;
 }
 
@@ -95,12 +102,6 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 a:hover
 {
     color:#0065FC;
-}
-.Filtres a
-{
-    text-decoration:none;
-    font-weight:bold;
-    color:black;
 }
 
 .Filtres /* Filtre - "Navigation" aligné à gauche*/ 
@@ -192,24 +193,32 @@ a:hover
     margin-bottom:69px;
     margin-top:30px;
 }
-#HebergementaMarseille .Hebergement img
+.HebergementaMarseille
+{
+    background-color:#F2F2F2;
+    margin-right:51.5px;
+    border-radius:35px 35px 35px 35px;
+}
+
+#BlocHebergementEtPopulaireEtActivite .Hebergement img
 {
     width:277px;
     height:128px;
 }
-#HebergementaMarseille/* Id : Lien section page */
+#BlocHebergementEtPopulaireEtActivite/* Id : Lien section page */
 {
-    background-color:#F2F2F2;
-    width:1022px;
-    height:720px;
+    width:1583px;
+    height:1303px;
     margin-right:51.5px;
     margin-bottom:69px;
     border-radius:35px 35px 35px 35px;
 }
-#HebergementaMarseille .content 
+#BlocHebergementEtPopulaireEtActivite .content 
 {
     display:flex;
     flex-wrap:wrap;
+    background-color: #F2F2F2;
+    border-radius:35px 35px 35px 35px;
 }
 
 .Hebergement
