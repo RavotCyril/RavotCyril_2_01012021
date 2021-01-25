@@ -25,6 +25,7 @@ body,h1
 nav
 {
     width:1483px;
+    margin-right:auto;
 }
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste */
 {
@@ -189,12 +190,14 @@ a:hover
 {
     display:flex;
     width:1583px;
-    height:720px;
     margin-bottom:69px;
     margin-top:30px;
+    margin-left:49.5px;
+    margin-right:49.5px;
 }
 .HebergementaMarseille
 {
+    width:900px;
     background-color:#F2F2F2;
     margin-right:51.5px;
     border-radius:35px 35px 35px 35px;
@@ -210,7 +213,6 @@ a:hover
     width:1583px;
     height:1303px;
     margin-right:51.5px;
-    margin-bottom:69px;
     border-radius:35px 35px 35px 35px;
 }
 #BlocHebergementEtPopulaireEtActivite .content 
@@ -219,16 +221,19 @@ a:hover
     flex-wrap:wrap;
     background-color: #F2F2F2;
     border-radius:35px 35px 35px 35px;
+
 }
 
 .Hebergement
 {
-    width:240px;
+    width:225px;
     height:240px;
     background-color:white;
     border:7px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
+    margin-left:20px;
+    margin-right:20px;
 
 }
 .AfficherPlus
@@ -274,120 +279,136 @@ a:hover
 }
 .MargeHebergement
 {
-    margin-left:25px;
+    margin-left:15px;
 }
 
 #ActivitesaMarseille /* Id : Lien section page */
 {
     display:flex;
     width:1583px;
-    height:548px;
+    height:448px;
     margin-bottom:65px;
+    margin-right:49.5px;
+    margin-left:49.5px;
 }
-.colone1, .colone2, .colone3,
+.colone1, .colone2, .colone3
 {
     width:340px;
-    height:548px;
+    height:448px;
     border-right-width:0px;
-    margin-right:25px;
+    margin-right:0px;
+    margin-left:0px;
 }
 .colone4
 {
     width:340px;
-    height:557px;
-    margin-top:0px;
+    height:448px;
 }
+
 .Activites-VieuxPort
 {
     width:340px;
-    height:548px;
+    height:448px;
     border:1px solid grey;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
-    margin-left:5px;
-    margin-right:25px;
+    margin-top:0px;
+    margin-right:49.5px;
     margin-bottom:0px;
+    margin-left:10px;
+}
+.Activites-VieuxPort a
+{
+    width:340px;
+    height:448px;
 }
 .Activites-ParcNationalDesCalanques
 
 {
     width:340px;
-    height:548px;
+    height:448px;
     border:1px solid grey;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
-    margin-right:25px;
     margin-top:0px;
+    margin-right:49.5px;
     margin-bottom:0px;
+    margin-left:0px;
 }
 
 .Activites-FortDePomegues
 {
     width:340px;
-    height:329px;
+    height:216px;
     border:1px solid grey;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
-    margin-bottom:53px;
-    margin-right:25px;
     margin-top:0px;
+    margin-right:49.5px;
+    margin-bottom:53px;
+    margin-left:0px;
 }
 .Activites-IlesDuFrioul
 {
     width:340px;
-    height:165px;
+    height:173px;
     border:1px solid grey;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
-    margin-right:25px;
+    margin-top:0px;
+    margin-right:49.5px;
     margin-bottom:0px;
+    margin-left:0px;
 }
 .Activites-NotreDameDeLaGarde
 {
     width:340px;
-    height:249.25px;
+    height:219.5px;
     border:1px solid grey;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
-    margin-bottom:49.5px;
-    margin-right:0px;
     margin-top:0px;
+    margin-right:0px;
+    margin-bottom:49.5px;
+    margin-left:0px;
 }
 .Activites-ParcLongchamp
 {
     width:340px;
-    height:249.25px;
+    height:173px;
     border:1px solid grey;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
+    margin-top:0px;
     margin-right:0px;
     margin-bottom:0px;
+    margin-left:0px;
 }
 
 #ActivitesaMarseille .Activites-ParcNationalDesCalanques img, .Activites-VieuxPort img
 {
     width:340px;
-    height:427px;
+    height:412px;
 }
 #ActivitesaMarseille .Activites-FortDePomegues img
 {
     width:340px;
-    height:204px;
+    height:260px;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img
 {
     width:340px;
-    height:124.3px;
+    height:140px;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img
 {
     width:340px;
-    height:154px;
+    height:200px;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img
 {
     width:340px;
-    height:167px;
+    height:200px;
 }
 p
 {
@@ -420,7 +441,7 @@ h3
 footer
 {
     width:1583px;
-    height:241px;
+    height:200xpx;
     display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
     position:relative;
