@@ -16,7 +16,11 @@ body,h1
 
 #Reservia  /* Logo */
 {
-    width:150px;
+    width:100px;
+}
+.NavEtLogo
+{
+    display:flex;
 }
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste */
 {
