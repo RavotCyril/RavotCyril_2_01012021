@@ -5,8 +5,14 @@
 }
 header
 {
-    width:1583px;
+    width:1464px;
     height:350px;
+    margin-left:59.4px;
+    margin-right:59.4px;
+}
+header a:hover
+{
+    color:#0065FC;
 }
 
 body,h1
@@ -16,7 +22,7 @@ body,h1
 
 #Reservia  /* Logo */
 {
-    width:100px;
+    height:2.9rem;
 }
 .NavEtLogo
 {
@@ -24,8 +30,7 @@ body,h1
 }
 nav
 {
-    width:1483px;
-    margin-right:auto;
+    width:1400px;
 }
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste */
 {
@@ -73,10 +78,9 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 .IconLocalisation
 {
     display:inline-flex;
-    border:1.5px solid #F2F2F2 ;
-    border-radius:15px 15px 15px 15px;
-    width:365px;
-    height:52px;
+    width:30rem;
+    height:50px;
+    overflow:auto;
 }
 .IconLocalisation i
 {
@@ -84,25 +88,22 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     background-color:#F2F2F2;
     border-width:18px;
     border-radius:15px 0px 0px 15px;
-}
-.IconLocalisation input
-{
-    border:1px solid #F2F2F2 ;
-    height:52px;
-}
-.backgroundBlue
-{
-    background-color: #0065FC;
-    font-weight:bold;
-    color:white;
-    border-radius: 0rem 1.0rem 1.0rem 0rem;
-    padding:0 1.3rem 0rem 1.0rem;
     overflow:hidden;
 }
-
-a:hover
+#site-search
 {
-    color:#0065FC;
+    font-weight:bold;
+    overflow:hidden;
+    padding:1.2rem;
+}
+.BoutonRechercher
+{
+    background-color:#0065FC;
+    color:white;
+    font-weight:bold;
+    border:none;
+    border-radius:0 0.7rem 0.7rem 0;
+    cursor:pointer;
 }
 
 .Filtres /* Filtre - "Navigation" aligné à gauche*/ 
@@ -115,16 +116,16 @@ a:hover
 }
 .filtre_li
 {
-    padding-right:22px;
+    padding-right:40px;
 }
 
 .filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises
 {
-    border:10px solid #F2F2F2;
+    border:11px solid #F2F2F2;
     border-width:2px 2px 2px 0px;
     border-radius:25px 25px 25px 25px;
     margin-right:25px;
-    padding:0px 15px 0px 0;
+    padding:0px 25px 0px 0;
     overflow:hidden;
 
 }
@@ -181,26 +182,9 @@ a:hover
 {
     border:2px solid #f2f2f2;
     border-radius:100%;
-    margin-left:15px;
     margin-right:15px;
     width:19px;
     text-align:center;
-}
-.BlocHergementetPopulaire
-{
-    display:flex;
-    width:1583px;
-    margin-bottom:69px;
-    margin-top:30px;
-    margin-left:49.5px;
-    margin-right:49.5px;
-}
-.HebergementaMarseille
-{
-    width:900px;
-    background-color:#F2F2F2;
-    margin-right:51.5px;
-    border-radius:35px 35px 35px 35px;
 }
 
 #BlocHebergementEtPopulaireEtActivite .Hebergement img
@@ -210,10 +194,17 @@ a:hover
 }
 #BlocHebergementEtPopulaireEtActivite/* Id : Lien section page */
 {
-    width:1583px;
+    width:1464px;
     height:1303px;
-    margin-right:51.5px;
+    margin-right:59.4px;
+    margin-left:59.4px;
+    margin-bottom:65px;
     border-radius:35px 35px 35px 35px;
+}
+#BlocHebergementEtPopulaireEtActivite a
+{
+    text-decoration:none;
+    color:black;
 }
 #BlocHebergementEtPopulaireEtActivite .content 
 {
@@ -221,25 +212,38 @@ a:hover
     flex-wrap:wrap;
     background-color: #F2F2F2;
     border-radius:35px 35px 35px 35px;
-
+}
+.BlocHergementetPopulaire
+{
+    display:flex;
+    width:1464px;
+    margin-bottom:69px;
+    margin-top:30px;
+}
+.HebergementaMarseille
+{
+    width:1022px;
+    background-color:#F2F2F2;
+    margin-right:40px;
+    border-radius:35px 35px 35px 35px;
 }
 
 .Hebergement
 {
-    width:225px;
+    width:254px;
     height:240px;
     background-color:white;
     border:7px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:30px;
+    margin-right:0px;
 
 }
 .AfficherPlus
 {
     font-weight:bold;
-    margin-left:50px;
+    margin-left:30px;
 }
 
 #LesPlusPopulaires .Populaire img
@@ -250,7 +254,7 @@ a:hover
 #LesPlusPopulaires /* Article " les plus populaires aligné à droite   */
 {
     background-color:#F2F2F2;
-    width:510px;
+    width:495px;
     height:720px;
     border-radius:35px 35px 35px 35px;
 }
@@ -285,15 +289,12 @@ a:hover
 #ActivitesaMarseille /* Id : Lien section page */
 {
     display:flex;
-    width:1583px;
+    width:1464px;
     height:448px;
-    margin-bottom:65px;
-    margin-right:49.5px;
-    margin-left:49.5px;
 }
 .colone1, .colone2, .colone3
 {
-    width:340px;
+    width:326.5x;
     height:448px;
     border-right-width:0px;
     margin-right:0px;
@@ -301,33 +302,33 @@ a:hover
 }
 .colone4
 {
-    width:340px;
+    width:326.5px;
     height:448px;
 }
 
 .Activites-VieuxPort
 {
-    width:340px;
+    width:326.5px;
     height:448px;
-    border:1px solid grey;
+    border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
     margin-right:49.5px;
     margin-bottom:0px;
-    margin-left:10px;
+    margin-left:0px;
 }
 .Activites-VieuxPort a
 {
-    width:340px;
+    width:326.5px;
     height:448px;
 }
 .Activites-ParcNationalDesCalanques
 
 {
-    width:340px;
+    width:326.5px;
     height:448px;
-    border:1px solid grey;
+    border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -338,9 +339,9 @@ a:hover
 
 .Activites-FortDePomegues
 {
-    width:340px;
+    width:326.5px;
     height:216px;
-    border:1px solid grey;
+    border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -350,9 +351,9 @@ a:hover
 }
 .Activites-IlesDuFrioul
 {
-    width:340px;
+    width:326.5px;
     height:173px;
-    border:1px solid grey;
+    border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -362,9 +363,9 @@ a:hover
 }
 .Activites-NotreDameDeLaGarde
 {
-    width:340px;
+    width:326.5px;
     height:219.5px;
-    border:1px solid grey;
+    border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -374,9 +375,9 @@ a:hover
 }
 .Activites-ParcLongchamp
 {
-    width:340px;
+    width:326.5px;
     height:173px;
-    border:1px solid grey;
+    border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -387,27 +388,27 @@ a:hover
 
 #ActivitesaMarseille .Activites-ParcNationalDesCalanques img, .Activites-VieuxPort img
 {
-    width:340px;
+    width:326.5px;
     height:412px;
 }
 #ActivitesaMarseille .Activites-FortDePomegues img
 {
-    width:340px;
+    width:326.5px;
     height:260px;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img
 {
-    width:340px;
+    width:326.5px;
     height:140px;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img
 {
-    width:340px;
+    width:326.5px;
     height:200px;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img
 {
-    width:340px;
+    width:326.5px;
     height:200px;
 }
 p
