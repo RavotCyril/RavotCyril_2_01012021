@@ -290,7 +290,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     display:flex;
     width:1464px;
-    height:448px;
+    height:474px;
 }
 .colone1, .colone2, .colone3
 {
@@ -309,25 +309,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 .Activites-VieuxPort
 {
     width:326.5px;
-    height:448px;
-    border:1px solid white;
-    border-radius:35px 35px 35px 35px;
-    overflow:hidden;
-    margin-top:0px;
-    margin-right:49.5px;
-    margin-bottom:0px;
-    margin-left:0px;
-}
-.Activites-VieuxPort a
-{
-    width:326.5px;
-    height:448px;
-}
-.Activites-ParcNationalDesCalanques
-
-{
-    width:326.5px;
-    height:448px;
+    height:474px;
+    box-shadow: 0px 0px 10px;
     border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
@@ -340,19 +323,34 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 .Activites-FortDePomegues
 {
     width:326.5px;
-    height:216px;
+    height:250px;
     border:1px solid white;
+    box-shadow: 0px 0px 10px;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
     margin-right:49.5px;
-    margin-bottom:53px;
+    margin-bottom:50px;
     margin-left:0px;
 }
 .Activites-IlesDuFrioul
 {
     width:326.5px;
-    height:173px;
+    height:174px;
+    box-shadow: 0px 0px 10px;
+    border-radius:35px 35px 35px 35px;
+    overflow:hidden;
+    margin-top:0px;
+    margin-right:49.5px;
+    margin-bottom:0px;
+    margin-left:0px;
+}
+.Activites-ParcNationalDesCalanques
+
+{
+    width:326.5px;
+    height:474px;
+    box-shadow: 0px 0px 10px;
     border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
@@ -361,22 +359,25 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     margin-bottom:0px;
     margin-left:0px;
 }
+
 .Activites-NotreDameDeLaGarde
 {
     width:326.5px;
-    height:219.5px;
+    height:205px;
+    box-shadow: 0px 0px 10px;
     border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
     margin-right:0px;
-    margin-bottom:49.5px;
+    margin-bottom:46px;
     margin-left:0px;
 }
 .Activites-ParcLongchamp
 {
     width:326.5px;
-    height:173px;
+    height:230px;
+    box-shadow: 0px 0px 10px;
     border:1px solid white;
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
@@ -389,27 +390,27 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 #ActivitesaMarseille .Activites-ParcNationalDesCalanques img, .Activites-VieuxPort img
 {
     width:326.5px;
-    height:412px;
+    height:427px;
 }
 #ActivitesaMarseille .Activites-FortDePomegues img
 {
     width:326.5px;
-    height:260px;
+    height:204px;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img
 {
     width:326.5px;
-    height:140px;
+    height:124px;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img
 {
     width:326.5px;
-    height:200px;
+    height:154px;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img
 {
     width:326.5px;
-    height:200px;
+    height:167px;
 }
 p
 {
