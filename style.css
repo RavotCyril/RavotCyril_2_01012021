@@ -6,13 +6,18 @@
 header
 {
     width:1464px;
-    height:350px;
+    height:425px;
     margin-left:59.4px;
     margin-right:59.4px;
 }
 header a:hover
 {
     color:#0065FC;
+}
+body
+{
+    width:1583px;
+    height:2030px;
 }
 
 body,h1
@@ -22,6 +27,8 @@ body,h1
 
 #Reservia  /* Logo */
 {
+    margin-top:55px;
+    margin-bottom:40px;
     height:2.9rem;
 }
 .NavEtLogo
@@ -59,7 +66,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     text-decoration:none;
     border-top:3px solid #0065FC;
     padding:20px;
-    padding-top:54px;
+    padding-top:55px;
     color:#0065FC;
 }
 .decoration3
@@ -196,9 +203,10 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     width:1464px;
     height:1280px;
+    margin-top:25px;
     margin-right:59.4px;
     margin-left:59.4px;
-    margin-bottom:45px;
+    margin-bottom:65px;
     border-radius:35px 35px 35px 35px;
 }
 #BlocHebergementEtPopulaireEtActivite a
@@ -217,8 +225,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     display:flex;
     width:1464px;
-    margin-bottom:35px;
-    margin-top:15px;
+    margin-bottom:69px;
 }
 .HebergementaMarseille
 {
@@ -255,7 +262,6 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     background-color:#F2F2F2;
     width:495px;
-    height:720px;
     border-radius:35px 35px 35px 35px;
 }
 .Populaire
@@ -290,7 +296,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     display:flex;
     width:1464px;
-    height:474px;
+    height:490px;
 }
 .colone1, .colone2, .colone3
 {
@@ -438,13 +444,27 @@ h3
 footer
 {
     width:1583px;
-    height:200xpx;
+    height:241px;
+    border-top-width:38.78px;
+    border-bottom-width:41.5px;
     display:flex;
     background-color: #F2F2F2; /* Footer : Couleur de fond du footer */
     position:relative;
     justify-content: space-around;
 }
-@media screen and (min-width:768px)
-{
+@media screen and (width:768px)
 
+header
+    {
+        width:10%;
+        height:10%;
+    }
 }
+@media screen and (width:375px)
+
+header
+{
+    width:10%;
+    height:10%;
+}
+
