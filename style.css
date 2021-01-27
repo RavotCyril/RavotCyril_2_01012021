@@ -195,10 +195,10 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 #BlocHebergementEtPopulaireEtActivite/* Id : Lien section page */
 {
     width:1464px;
-    height:1303px;
+    height:1280px;
     margin-right:59.4px;
     margin-left:59.4px;
-    margin-bottom:65px;
+    margin-bottom:45px;
     border-radius:35px 35px 35px 35px;
 }
 #BlocHebergementEtPopulaireEtActivite a
@@ -217,8 +217,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     display:flex;
     width:1464px;
-    margin-bottom:69px;
-    margin-top:30px;
+    margin-bottom:35px;
+    margin-top:15px;
 }
 .HebergementaMarseille
 {
@@ -309,9 +309,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 .Activites-VieuxPort
 {
     width:326.5px;
-    height:474px;
-    box-shadow: 0px 0px 10px;
-    border:1px solid white;
+    height:472px;
+    box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -324,8 +323,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     width:326.5px;
     height:250px;
-    border:1px solid white;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -336,8 +334,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 .Activites-IlesDuFrioul
 {
     width:326.5px;
-    height:174px;
-    box-shadow: 0px 0px 10px;
+    height:170px;
+    box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -349,9 +347,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 
 {
     width:326.5px;
-    height:474px;
-    box-shadow: 0px 0px 10px;
-    border:1px solid white;
+    height:472px;
+    box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -364,8 +361,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     width:326.5px;
     height:205px;
-    box-shadow: 0px 0px 10px;
-    border:1px solid white;
+    box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
@@ -376,9 +372,8 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 .Activites-ParcLongchamp
 {
     width:326.5px;
-    height:230px;
-    box-shadow: 0px 0px 10px;
-    border:1px solid white;
+    height:219px;
+    box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
     margin-top:0px;
