@@ -5,7 +5,6 @@
 }
 header  /* Header du site avec le logo et la Navigation + Le titre principal et le bouton de Recherche et la Navigation Filtre */
 {
-    width:1465px;
     height:425px;
     margin-left:60px;
     margin-right:60px;
@@ -39,10 +38,6 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     float:left;
     margin-right:40px;
 } 
-nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec aucune marge et aligné avec les plus poplaires et son icon.*/
-{
-    margin-right:0px;
-}
 
 .navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
@@ -159,7 +154,7 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 }
 .MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
 {
-    margin-top:40px;
+    margin-top:50px;
 }
 .bold2 /*  Tous les titres des figures de la session " Activité à Marseille" en Gras */
 {
@@ -195,8 +190,8 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 }
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
-    width:1564px;
-    height:1360px;
+    width:100%;
+    height:66%;
     margin:25px 60px 65px;
     border-radius:35px 35px 35px 35px;
 }
@@ -216,12 +211,13 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 .BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
 {
     display:flex;
-    width:1564px;
+    width:100%;
+    height:55%;
     margin-bottom:70px;
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:1022px;
+    width:65.4%;
     background-color:#F2F2F2;
     margin-right:40px;
     border-radius:35px 35px 35px 35px;
@@ -252,7 +248,7 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
     background-color:#F2F2F2;
-    width:495px;
+    width:31.7%;
     border-radius:35px 35px 35px 35px;
 }
 .Populaire  /* Figure de l'Aside"les plus populaires"   */
@@ -284,8 +280,8 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 
 #ActivitesaMarseille   /* Ancre et section page Activités de Navigation */
 {
-    width:1564px;
-    height:548px;
+    width:100%;
+    height:40.33%;
 }
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
@@ -427,7 +423,7 @@ h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
     width:100%;
-    height:200px;
+    height:9.7%;
     display:flex;
     background-color: #F2F2F2;
     position:relative;
