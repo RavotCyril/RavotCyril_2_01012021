@@ -154,7 +154,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 }
 .MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
 {
-    margin-top:50px;
+    margin-top:31px;
 }
 .bold2 /*  Tous les titres des figures de la session " Activité à Marseille" en Gras */
 {
@@ -205,6 +205,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-around;
     background-color: #F2F2F2;
     border-radius:35px 35px 35px 35px;
 }
@@ -212,12 +213,12 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     display:flex;
     width:100%;
-    height:55%;
+    height:53%;
     margin-bottom:70px;
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:65.4%;
+    width:60%;
     background-color:#F2F2F2;
     margin-right:40px;
     border-radius:35px 35px 35px 35px;
@@ -225,19 +226,20 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 
 .Hebergement    /* Les 6 Figures de la Section Hébergement à Marseille */ 
 {
-    width:260px;
+    width:90%;
     background-color:white;
     border:7px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
-    margin-left:30px;
-    margin-right:0px;
+    margin:0px;
 
 }
 .AfficherPlus 
 {
     font-weight:bold;
+    margin-top:46px;
     margin-left:30px;
+    margin-bottom:56px;
 }
 
 #LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
@@ -256,6 +258,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     display:flex;
     background-color:white;
     width:85%;
+    height:21%;
     border:6px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
