@@ -196,7 +196,7 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
     width:1564px;
-    height:1396px;
+    height:1360px;
     margin:25px 60px 65px;
     border-radius:35px 35px 35px 35px;
 }
@@ -285,20 +285,22 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 #ActivitesaMarseille   /* Ancre et section page Activités de Navigation */
 {
     width:1564px;
-    height:580px;
+    height:548px;
 }
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
     display:flex;
-    width:100%;
     justify-content:space-around;
+    width:100%;
+    height:500px;
 }
-.Colone2, .Colone4    /* Div 2 et 4 pour les mettres en flex.En colonnes et en Space Wetween  */ 
+.Colone4   /* Div 2 et 4 pour les mettres en flex.En colonnes et en Space Wetween  */ 
 {
    display:flex;
    flex-direction:column;
    justify-content:space-between;
 }
+
 .Colone1, .Colone2, .Colone3
 {
     width:25%;
@@ -312,7 +314,7 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 .Activites-VieuxPort   /* Figure VieuxPort  */ 
 {
     width:100%;
-    height:85%;
+    height:100%;
     margin:0px;
     box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -322,17 +324,17 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 .Activites-FortDePomegues   /* Figure FortDePomegues  */ 
 {
     width:100%;
-    height:46%;
+    height:48%;
     margin:0px;
     box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
 
-.Activites-IlesDuFrioul   /* Figure IlesDuFrioul */ 
+.Activites-IlesDuFrioul  /* Figure IlesDuFrioul */ 
 {
     width:100%;
-    height:32%;
+    height:34%;
     margin:0px;
     box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -342,7 +344,7 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 .Activites-ParcNationalDesCalanques   /* Figure ParcNationalDesCalanques  */ 
 {
     width:100%;
-    height:85%;
+    height:100%;
     margin:0px;
     box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -352,7 +354,7 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 .Activites-NotreDameDeLaGarde   /* Figure NotreDameDeLaGarde */ 
 {
     width:100%;
-    height:46%;
+    height:84%;
     margin:0px;
     box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -361,14 +363,14 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 .Activites-ParcLongchamp     /* Figure ParcLongChamp */ 
 {
     width:100%;
-    height:37%;
+    height:67%;
     margin:0px;
     box-shadow: 0px 0px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
 
-#ActivitesaMarseille .Activites-VieuxPort, .Activites-ParcNationalDesCalanques img    /* image ParcNationalDesCalanques et VieuxPort */ 
+#ActivitesaMarseille .Activites-VieuxPort img, .Activites-ParcNationalDesCalanques img    /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
     height:87%;
@@ -386,12 +388,12 @@ nav li:last-child /* Pour que le Li de Navigation avec " s'inscrire " soit avec 
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
 {
     width:100%;
-    height:58%;
+    height:72%;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
 {
     width:100%;
-    height:78%;
+    height:71%;
 }
 p
 {
