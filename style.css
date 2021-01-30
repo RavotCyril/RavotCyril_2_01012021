@@ -5,9 +5,10 @@
 }
 header  /* Header du site avec le logo et la Navigation + Le titre principal et le bouton de Recherche et la Navigation Filtre */
 {
-    height:425px;
-    margin-left:60px;
-    margin-right:60px;
+    width:91.2%;
+    height:430px;
+    margin-left:56px;
+    margin-right:84px;
 }
 header a:hover /* Pour qu'au survol les liens du header <a> soit en couleur bleu ciel. */
 {
@@ -17,14 +18,14 @@ header a:hover /* Pour qu'au survol les liens du header <a> soit en couleur bleu
 body  /* Police du site */
 {
     font-family:"Raleway";
-    width:1563px;
-    height:2060px;
+    width:1583px;
+    height:2064px;
 }
 
 #Reservia  /* Logo */
 {
-    margin-top:55px;
-    margin-bottom:40px;
+    margin-top:56px;
+    margin-bottom:41px;
     height:2.9rem;
 }
 .NavEtLogo /* Pour que la navigation soit espacé */
@@ -36,8 +37,12 @@ body  /* Police du site */
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
 {
     float:left;
-    margin-right:40px;
+    margin-right:74.5px;
 } 
+li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
+{
+    margin-right:0px;
+}
 
 .navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
@@ -114,6 +119,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     align-items:center;
     padding-left:0px;
     font-weight:bold;
+    margin-bottom:30.5px;
 }
 .filtre_li
 {
@@ -125,15 +131,12 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     border:11px solid #F2F2F2;
     border-width:2px 2px 2px 0px;
     border-radius:25px 25px 25px 25px;
-    margin-right:25px;
+    margin-right:28px;
     padding:0px 25px 0px 0;
     overflow:hidden;
 
 }
-.filtre_li-Familial
-{
-    margin-left:10px;
-}
+
 .filtre_li-Economiques i, .filtre_li-Familial i, .filtre_li-Romantique i, .filtre_li-AnimauxAutorises i
 {
     border:1rem solid #d6e7FF;
@@ -190,9 +193,9 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 }
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
-    width:100%;
-    height:66%;
-    margin:25px 60px 65px;
+    width:92.92%;
+    height:62%;
+    margin:30px 56px 65px;
     border-radius:35px 35px 35px 35px;
 }
 #BlocHebergementEtPopulaireEtActivite a   /* Pour enlever le surlignement et la couleur par défaut des liens des cartes Hébergement à Marseille */ 
@@ -213,14 +216,14 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 {
     display:flex;
     width:100%;
-    height:53%;
-    margin-bottom:70px;
+    height:48.8%;
+    margin-bottom:74px;
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:60%;
+    width:78.7%;
     background-color:#F2F2F2;
-    margin-right:40px;
+    margin-right:47px;
     border-radius:35px 35px 35px 35px;
 }
 
@@ -250,7 +253,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
     background-color:#F2F2F2;
-    width:31.7%;
+    width:45.6%;
     border-radius:35px 35px 35px 35px;
 }
 .Populaire  /* Figure de l'Aside"les plus populaires"   */
@@ -263,12 +266,13 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
     margin-top:40px;
+    margin-left:37px;
 }
 
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
 {
     float:right;
-    margin-right:85px;
+    margin-right:41px;
 }
 .MargePopulaire /* Mise en place des Figcaptions des figures de l'Aside "les plus populaires"   */
 {
@@ -284,14 +288,13 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 #ActivitesaMarseille   /* Ancre et section page Activités de Navigation */
 {
     width:100%;
-    height:40.33%;
+    height:42%;
 }
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
     display:flex;
     justify-content:space-around;
-    width:100%;
-    height:500px;
+    height:91.2%;
 }
 .Colone4   /* Div 2 et 4 pour les mettres en flex.En colonnes et en Space Wetween  */ 
 {
@@ -315,7 +318,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     width:100%;
     height:100%;
     margin:0px;
-    box-shadow: 0px 0px 25px rgb(170, 170, 173);
+    box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
@@ -325,7 +328,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     width:100%;
     height:48%;
     margin:0px;
-    box-shadow: 0px 0px 25px rgb(170, 170, 173);
+    box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
@@ -335,7 +338,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     width:100%;
     height:34%;
     margin:0px;
-    box-shadow: 0px 0px 25px rgb(170, 170, 173);
+    box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
@@ -345,7 +348,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     width:100%;
     height:100%;
     margin:0px;
-    box-shadow: 0px 0px 25px rgb(170, 170, 173);
+    box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
@@ -355,7 +358,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     width:100%;
     height:84%;
     margin:0px;
-    box-shadow: 0px 0px 25px rgb(170, 170, 173);
+    box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
@@ -364,7 +367,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     width:100%;
     height:67%;
     margin:0px;
-    box-shadow: 0px 0px 25px rgb(170, 170, 173);
+    box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
     overflow:hidden;
 }
@@ -400,13 +403,11 @@ p
 }
 h2      /* Titre h2- "hébergement à Marseille", "les plus populaires" ,"activités à Marseille" */ 
 {
-    width:100%;
     margin-left:40px;
     margin-top:35px;
 }
 h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance" */ 
 {
-    width:100%; 
 }
 
 #Apropos     /* Footer : Bloc "A propos " Texte aligné à gauche */
@@ -425,8 +426,7 @@ h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance
 }
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
-    width:100%;
-    height:9.7%;
+    height:11.7%;
     display:flex;
     background-color: #F2F2F2;
     position:relative;
