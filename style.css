@@ -427,7 +427,6 @@ h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance
 }
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
-    height:11.7%;
     display:flex;
     background-color: #F2F2F2;
     position:relative;
