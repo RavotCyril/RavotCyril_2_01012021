@@ -19,7 +19,7 @@ body  /* Police du site */
 {
     font-family:"Raleway";
     width:1583px;
-    height:2100px;
+    height:2060px;
 }
 
 #Reservia  /* Logo */
@@ -122,12 +122,12 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     font-weight:bold;
     margin-bottom:30.5px;
 }
-.filtre_li
+.filtre_li /* Marge à droite de la liste à puce Filtre -Li */ 
 {
     padding-right:40px;
 }
 
-.filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises
+.filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
     border:11px solid #F2F2F2;
     border-width:2px 2px 2px 0px;
@@ -135,10 +135,9 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     margin-right:28px;
     padding:0px 25px 0px 0;
     overflow:hidden;
-
 }
 
-.filtre_li-Economiques i, .filtre_li-Familial i, .filtre_li-Romantique i, .filtre_li-AnimauxAutorises i
+.filtre_li-Economiques i, .filtre_li-Familial i, .filtre_li-Romantique i, .filtre_li-AnimauxAutorises i /* Bordure Icon Filtres: Economique, Familial, Romantique ...*/ 
 {
     border:1rem solid #d6e7FF;
     border-radius:100%;
@@ -252,8 +251,8 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .AfficherPlus 
 {
     font-weight:bold;
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:42px;
+    margin-bottom:42px;
 }
 
 #LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
@@ -273,7 +272,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     display:flex;
     background-color:white;
     width:89%;
-    height:22%;
+    height:22.25%;
     border:6px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
@@ -305,22 +304,23 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
     display:flex;
-    justify-content:space-around;
     height:91.2%;
 }
-.Colone2, .Colone4   /* Div 2 et 4 pour les mettres en flex.En colonnes et en Space Wetween  */ 
+.Colone2  /* Div 2  En colonne   */ 
 {
-   display:flex;
    flex-direction:column;
-   justify-content:space-between;
+}
+.Colone4  /* Div 4 en flex.En colonne  */
+{
+    flex-direction:column;
 }
 
-.Colone1, .Colone2, .Colone3
+.Colone1, .Colone2, .Colone3 /* Div 1-2-3  Largeur et marge à droite  */
 {
     width:25%;
     margin-right:50px;
 }
-.Colone4
+.Colone4 /* Div 4  Largeur */
 {
     width:25%;
 }
@@ -328,7 +328,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .Activites-VieuxPort, .Activites-ParcNationalDesCalanques   /* Figure VieuxPort, Figure ParcNationalDesCalanques  */ 
 {
     width:100%;
-    height:98%;
+    height:98.5%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -338,7 +338,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .Activites-FortDePomegues   /* Figure FortDePomegues  */ 
 {
     width:100%;
-    height:50%;
+    height:55%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -348,7 +348,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .Activites-IlesDuFrioul  /* Figure IlesDuFrioul */ 
 {
     width:100%;
-    height:40%;
+    height:35%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -358,7 +358,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .Activites-NotreDameDeLaGarde   /* Figure NotreDameDeLaGarde */ 
 {
     width:100%;
-    height:84%;
+    height:45%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -367,7 +367,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .Activites-ParcLongchamp     /* Figure ParcLongChamp */ 
 {
     width:100%;
-    height:52%;
+    height:45%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -377,7 +377,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 #ActivitesaMarseille .Activites-VieuxPort img, .Activites-ParcNationalDesCalanques img    /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
-    height:87%;
+    height:88%;
 }
 #ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
 {
@@ -387,17 +387,17 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 #ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
 {
     width:100%;
-    height:67%;
+    height:66%;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
 {
     width:100%;
-    height:72%;
+    height:70%;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
 {
     width:100%;
-    height:65%;
+    height:73.5%;
 }
 p
 {
@@ -413,31 +413,27 @@ h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance
 
 #Apropos     /* Footer : Bloc "A propos " Texte aligné à gauche */
 {
-    text-align:left; 
 }
 
 #NosHebergements  /*  Footer : Bloc "Nos hébergements" texte aligné au centre */
 {
-    text-align:center;   
 }
 
 #Assistance      /*  Footer : Bloc "Assistance" texte aligné à droite */ 
 {
-    text-align:right;  
 }
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
+    height:10%;
     display:flex;
     background-color: #F2F2F2;
-    position:relative;
     justify-content: space-around;
 }
 @media screen and (width:768px)
 
 header
     {
-        width:10%;
-        height:10%;
+        height:12%;
     }
 }
 @media screen and (width:375px)
