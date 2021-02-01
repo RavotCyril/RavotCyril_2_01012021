@@ -229,6 +229,10 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     margin-right:47px;
     border-radius:35px 35px 35px 35px;
 }
+.Pointer
+{
+    pointer-events:none;
+}
 
 .Hebergement    /* Les 6 Figures de la Section Hébergement à Marseille */ 
 {
