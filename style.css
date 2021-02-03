@@ -1,12 +1,11 @@
 @font-face /* Police et couleur de la page */
+@media (min-width:1280px )  /* styles pour Ordinateur */
 {
     font-family:"Raleway";
     src:url("Police Raleway/Raleway-Regular.ttf") format("truetype");
 }
 header  /* Header du site avec le logo et la Navigation + Le titre principal et le bouton de Recherche et la Navigation Filtre */
 {
-    width:91.2%;
-    height:450px;
     margin-left:56px;
     margin-right:84px;
 }
@@ -33,22 +32,28 @@ body  /* Police du site */
     display:flex;
     justify-content:space-between;
 }
-
+nav
+{
+    display:flex;
+}
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
 {
     float:left;
-    margin-right:74.5px;
+    margin-top:56px;
+    margin-right:75px;
+    list-style:none;
 } 
 li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     margin-right:0px;
+    margin-top:56px;
 }
 
 .navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
-    list-style:none;
+    margin-right:75px;
+    margin-top:0px;
     text-decoration:none;
-    margin-top:56px;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
@@ -428,23 +433,217 @@ h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance
 }
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
-    height:10%;
+    height:12%;
     display:flex;
     background-color: #F2F2F2;
     justify-content: space-around;
 }
-@media screen and (width:768px)
-
-header
-    {
-        height:12%;
-    }
-}
-@media screen and (width:375px)
-
+@media screen and (max-width:480px)  /* styles pour mobiles portrait */
+{
 header
 {
-    width:10%;
-    height:10%;
+    width:auto;
+    height:auto;
+}
+#Reservia  /* Logo */
+{
+    width:8%;
+}
+.NavEtLogo /* Pour que la navigation soit en colonne */
+{
+    width:auto;
+    display:flex;
+    flex-direction:column;
+    padding-left:25px;
 }
 
+.navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
+{
+    width:auto;
+    text-decoration:none;
+    border-bottom:3px solid #0065FC;
+    color:#0065FC;
+}
+.blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
+{
+    width:auto;
+    position:absolute;
+    float:left;
+    color:#0065FC;
+    text-decoration:none;
+}
+.decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
+{
+    width:auto;
+    text-decoration:none;
+    color:black;
+}
+.decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
+{
+    width:auto;
+    padding-top:0px;
+    border:none;
+}
+.OrdreLi
+{
+    display:flex;
+    flex-direction:column;
+}
+.filtre_li /* Marge à droite de la liste à puce Filtre -Li */ 
+{
+    padding-right:250px;
+}
+
+nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
+{
+    width:auto;
+    margin-top:0px;
+    list-style:none;
+} 
+li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
+{
+    width:auto;
+    margin-right:0px;
+    margin-top:0px;
+}
+.Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
+{
+    height:auto;
+    list-style:none;
+    align-items:center;
+    padding-left:0px;
+    font-weight:bold;
+    margin-bottom:30.5px;
+}
+.filtre_li-Economiques, .filtre_li-Familial  /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
+{
+    width:auto;
+    height:auto;
+    border:11px solid #F2F2F2;
+    border-width:2px 2px 2px 0px;
+    border-radius:25px 25px 25px 25px;
+    margin-right:28px;
+    padding:0px 25px 0px 0;
+    overflow:hidden;
+}
+.filtre_li-Romantique, .filtre_li-AnimauxAutorises
+{
+    width:auto;
+    height:auto;
+    border:11px solid #F2F2F2;
+    border-width:2px 2px 2px 0px;
+    border-radius:25px 25px 25px 25px;
+    margin-right:28px;
+    padding:0px 25px 0px 0;
+    overflow:hidden;
+}
+#BlocHebergementEtPopulaireEtActivite  /* Main */ 
+{
+    width:auto;
+    height:auto;
+}
+
+.BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
+{
+    display:flex;
+    flex-direction:column-reverse;
+    width:auto;
+    height:auto;
+}
+#HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
+{
+    display:flex;
+    flex-direction:column;
+    width:auto;
+    height:auto;
+    background-color:white;
+}
+#BlocHebergementEtPopulaireEtActivite .content    /* Div pour mettre le titre " Hébergement à Marseille " dans la Section " hébergement à Marseille sans Flex. 
+                                    Et pour mettre en Flex les figures et les images de la Section " Hébergement à Marseille */ 
+{
+    width:auto;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    background-color:none;
+}
+#LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
+{
+    width:auto;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    background-color:#F2F2F2;
+}
+.iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
+{
+    float:none;
+    margin-left:125px;
+}
+#ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
+{
+    display:flex;
+    flex-direction:column;
+    background-color:none;
+}
+.Colone1
+{
+    width:25%;
+    margin-top:15px;
+}
+.Colone2
+{
+    width:25%;
+    margin-top:37px;
+}
+.Colone3  /* Div 4 en flex.En colonne  */
+{
+    width:25%;
+    margin-top:37px;
+}
+.Colone4
+{
+    width:25%;
+    margin-top:37px;
+}
+#ActivitesaMarseille .content2 img     /* image FortDePomegues  */ 
+{
+    width:100%;
+}
+
+#ActivitesaMarseille .content2 .Activites-FortDePomegues
+{
+    width:100%;
+    height:245px;
+}
+#ActivitesaMarseille .content2 .Activites-IlesDuFrioul
+{
+    width:100%;
+}
+
+.ActivitesaMarseille .content2 .Activites-ParcLongchamp 
+{
+    width:100%;
+}
+.ActivitesaMarseille .content2 .Activites-NotreDameDeLaGarde
+{
+    width:100%;
+}
+footer        /* Footer : Couleur de fond du footer + Flex */
+{
+    width:auto;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    background-color: #F2F2F2;
+}
+
+@media screen and (min-width:769px) and (max-width:1280px)
+{
+
+}  /* styles pour tablettes*/
+@media screen and (min-width:481px) and (max-width:768px)   /* styles pour mobile paysage*/
+{
+
+}
+}
