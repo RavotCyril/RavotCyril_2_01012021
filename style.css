@@ -262,8 +262,8 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .AfficherPlus 
 {
     font-weight:bold;
-    margin-top:42px;
-    margin-bottom:42px;
+    margin-top:55px;
+    margin-bottom:55px;
 }
 
 #LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
@@ -316,38 +316,14 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     display:flex;
     justify-content:space-between;
 }
-.Colone2  /* Div 2  En colonne   */ 
-{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-}
-.Fort-de-Pomegue, .Iles-Du-Frioul
-{
-    height:200px;
-    overflow:hidden;
-    position:relative;
-}
 
-.Colone4  /* Div 4 en flex.En colonne  */
+.Colone1, .Colone2, .Colone3, .Colone4 /* Div 1-2-3-4  Largeur  */
 {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    width:23%;
-}
-
-.Colone1, .Colone2, .Colone3 /* Div 1-2-3-4  Largeur  */
-{
-    display:flex;
-    justify-content:space-between;
     width:23%;
 }
 
 .Activites-VieuxPort, .Activites-ParcNationalDesCalanques   /* Figure VieuxPort, Figure ParcNationalDesCalanques  */ 
 {
-    width:100%;
-    height:100%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -356,7 +332,6 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 
 .Activites-FortDePomegues   /* Figure FortDePomegues  */ 
 {
-    width:100%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -365,7 +340,6 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 
 .Activites-IlesDuFrioul  /* Figure IlesDuFrioul */ 
 {
-    width:100%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -374,7 +348,6 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 
 .Activites-NotreDameDeLaGarde   /* Figure NotreDameDeLaGarde */ 
 {
-    width:100%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -382,7 +355,6 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 .Activites-ParcLongchamp     /* Figure ParcLongChamp */ 
 {
-    width:100%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -392,25 +364,27 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 #ActivitesaMarseille .Activites-VieuxPort img, .Activites-ParcNationalDesCalanques img    /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
-    height:90%;
+    height:427px;
 }
 #ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
 {
-    position:absolute;
     width:100%;
+    height:204px;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
 {
-    position:absolute;
     width:100%;
+    height:124px;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
 {
     width:100%;
+    height:154px;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
 {
     width:100%;
+    height:167px;
 }
 p
 {
@@ -420,21 +394,7 @@ h2      /* Titre h2- "hébergement à Marseille", "les plus populaires" ,"activi
 {
     margin-top:35px;
 }
-h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance" */ 
-{
-}
 
-#Apropos     /* Footer : Bloc "A propos " Texte aligné à gauche */
-{
-}
-
-#NosHebergements  /*  Footer : Bloc "Nos hébergements" texte aligné au centre */
-{
-}
-
-#Assistance      /*  Footer : Bloc "Assistance" texte aligné à droite */ 
-{
-}
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
     display:flex;
@@ -628,26 +588,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     flex-direction:column;
     background-color:none;
 }
-.Colone1
-{
-    width:25%;
-    margin-top:15px;
-}
-.Colone2
-{
-    width:25%;
-    margin-top:37px;
-}
-.Colone3  /* Div 4 en flex.En colonne  */
-{
-    width:25%;
-    margin-top:37px;
-}
-.Colone4
-{
-    width:25%;
-    margin-top:37px;
-}
+
 #ActivitesaMarseille .content2 img     /* image FortDePomegues  */ 
 {
     width:100%;
