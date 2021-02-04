@@ -317,12 +317,18 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     justify-content:space-between;
 }
 
-.Colone1, .Colone2, .Colone3, .Colone4 /* Div 1-2-3-4  Largeur  */
+.Colone1, .Colone3 /* Div 1-2-3-4  Largeur  */
 {
     width:23%;
 }
-
-.Activites-VieuxPort, .Activites-ParcNationalDesCalanques   /* Figure VieuxPort, Figure ParcNationalDesCalanques  */ 
+.Colone2, .Colone4 
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:23%
+}
+.Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp    /* Figure Activités */ 
 {
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
@@ -330,61 +336,47 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     overflow:hidden;
 }
 
-.Activites-FortDePomegues   /* Figure FortDePomegues  */ 
-{
-    margin:0px;
-    box-shadow: 0px 10px 25px rgb(170, 170, 173);
-    border-radius:35px 35px 35px 35px;
-    overflow:hidden;
-}
-
-.Activites-IlesDuFrioul  /* Figure IlesDuFrioul */ 
-{
-    margin:0px;
-    box-shadow: 0px 10px 25px rgb(170, 170, 173);
-    border-radius:35px 35px 35px 35px;
-    overflow:hidden;
-}
-
-.Activites-NotreDameDeLaGarde   /* Figure NotreDameDeLaGarde */ 
-{
-    margin:0px;
-    box-shadow: 0px 10px 25px rgb(170, 170, 173);
-    border-radius:35px 35px 35px 35px;
-    overflow:hidden;
-}
-.Activites-ParcLongchamp     /* Figure ParcLongChamp */ 
-{
-    margin:0px;
-    box-shadow: 0px 10px 25px rgb(170, 170, 173);
-    border-radius:35px 35px 35px 35px;
-    overflow:hidden;
-}
-
-#ActivitesaMarseille .Activites-VieuxPort img, .Activites-ParcNationalDesCalanques img    /* image ParcNationalDesCalanques et VieuxPort */ 
+#ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
     height:427px;
+    object-fit:cover;
+    object-position:50% 0%;
 }
+
 #ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
 {
     width:100%;
     height:204px;
+    object-fit:cover;
+    object-position:0% 40%;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
 {
     width:100%;
     height:124px;
+    object-fit:cover;
+    object-position:0% 20%;
+}
+#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
+{
+    width:100%;
+    height:427px;
+    object-fit:cover;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
 {
     width:100%;
     height:154px;
+    object-fit:cover;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
 {
     width:100%;
     height:167px;
+    object-fit:cover;
+    object-position:0% 20%;
 }
 p
 {
