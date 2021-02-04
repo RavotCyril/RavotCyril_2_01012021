@@ -203,8 +203,6 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
-    width:92.92%;
-    height:62%;
     margin:30px 56px 65px;
     border-radius:35px 35px 35px 35px;
 }
@@ -225,13 +223,10 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
 {
     display:flex;
-    width:100%;
-    height:58%;
     margin-bottom:74px;
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:100%;
     background-color:#F2F2F2;
     padding-right:40px;
     padding-left:45px;
@@ -338,6 +333,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     display:flex;
     flex-direction:column;
+    justify-content:space-between;
     width:23%;
 }
 
@@ -351,6 +347,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .Activites-VieuxPort, .Activites-ParcNationalDesCalanques   /* Figure VieuxPort, Figure ParcNationalDesCalanques  */ 
 {
     width:100%;
+    height:100%;
     margin:0px;
     box-shadow: 0px 10px 25px rgb(170, 170, 173);
     border-radius:35px 35px 35px 35px;
@@ -395,18 +392,17 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 #ActivitesaMarseille .Activites-VieuxPort img, .Activites-ParcNationalDesCalanques img    /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
+    height:90%;
 }
 #ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
 {
     position:absolute;
     width:100%;
-    height:100%;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
 {
     position:absolute;
     width:100%;
-    height:75%;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
 {
@@ -441,7 +437,6 @@ h3      /* Footer :  "Titres h3 - " A propos ", "Nos hebergements ", "Assistance
 }
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
-    width:100%;
     display:flex;
     background-color: #F2F2F2;
     justify-content: space-between;
