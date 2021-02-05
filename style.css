@@ -395,6 +395,7 @@ footer        /* Footer : Couleur de fond du footer + Flex */
     justify-content: space-between;
     padding:2% 30px 2%;
 }
+
 @media screen and (max-width:480px)  /* styles pour mobiles portrait */
 {
 body
@@ -434,9 +435,6 @@ header
     font-weight:bold;
     text-decoration:none;
     margin:0px;
-    padding-left:350px;
-    padding-bottom:40px;
-    margin-top:-70px;
 }
 .decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
 {
@@ -462,7 +460,6 @@ h1
     height:20px;
     align-items:center;
 }
-}
 
 .OrdreLi
 {
@@ -475,16 +472,19 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     margin-top:0px;
     list-style:none;
 } 
+
 nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     width:auto;
     margin-right:0px;
     margin-top:0px;
 }
+
 .filtre_li
 {
     font-weight:bold;
 }
+
 .Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
 {
     display:flex;
@@ -508,6 +508,7 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
     overflow:hidden;
     margin-bottom:20px;
 }
+
 .filtre_li-Familial 
 {
     width:27%;
@@ -519,6 +520,7 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
     overflow:hidden;
     margin-bottom:20px;
 }
+
 .filtre_li-Romantique
 {
     width:36%;
@@ -530,6 +532,7 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
     overflow:hidden;
     margin-bottom:20px;
 }
+
 .filtre_li-AnimauxAutorises
 {
     width:47%;
@@ -548,6 +551,7 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
     display:flex;
     flex-wrap:wrap;
 }
+
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
     margin-left:20px;
@@ -614,8 +618,6 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
 {
     display:flex;
     flex-direction:column;
-    background-color:none;
-
 }
 #ActivitesaMarseille .content2 img
 {
@@ -642,13 +644,19 @@ footer        /* Footer : Couleur de fond du footer + Flex */
     padding-left:30px;
     padding-right:0px;
 }
+}
 
-@media screen and (min-width:769px) and (max-width:1280px)
+@media screen and (min-width:769px) and (max-width:1280px)  /* styles pour tablettes*/
 {
-
-}  /* styles pour tablettes*/
+    header
+{
+    width:100%;
+}
+}  
 @media screen and (min-width:481px) and (max-width:768px)   /* styles pour mobile paysage*/
 {
-
+    header
+{
+    width:100%;
 }
 }
