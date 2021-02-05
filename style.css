@@ -414,26 +414,29 @@ header
 }
 .NavEtLogo /* Pour que la navigation soit en colonne */
 {
-    width:auto;
     display:flex;
     flex-direction:column;
-    padding-left:25px;
 }
 
 .navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
-    width:auto;
+    width:100%;
     text-decoration:none;
     border-bottom:3px solid #0065FC;
     color:#0065FC;
+    margin:0px;
+    padding:0px;
+    padding-left:25px;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
-    margin-top:56px;
-    width:auto;
-    float:left;
     color:#0065FC;
+    font-weight:bold;
     text-decoration:none;
+    margin:0px;
+    padding-left:350px;
+    padding-bottom:40px;
+    margin-top:-70px;
 }
 .decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
 {
@@ -595,7 +598,7 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
 }
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
-    width:100%;
+    width:460px;
     display:flex;
     flex-direction:column;
     background-color:#F2F2F2;
