@@ -134,6 +134,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .filtre_li /* Marge à droite de la liste à puce Filtre -Li */ 
 {
     padding-right:40px;
+    font-weight:bold;
 }
 
 .filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
@@ -399,15 +400,17 @@ footer        /* Footer : Couleur de fond du footer + Flex */
 body
 {
     width:98%;
+    height:auto;
     margin:0 auto;
 }    
 header
 {
-    width:100%;
+    margin-left:20px;
+    margin-right:20px;
 }
 #Reservia  /* Logo */
 {
-    height:50px;
+    width:20%;
 }
 .NavEtLogo /* Pour que la navigation soit en colonne */
 {
@@ -426,6 +429,7 @@ header
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
+    margin-top:56px;
     width:auto;
     float:left;
     color:#0065FC;
@@ -445,18 +449,21 @@ header
 }
 h1
 {
-    width:20%;
+    width:70%;
     flex-wrap:wrap;
 }
+.BoutonRechercher/* Contenue du bouton " Rechercher"  */
+{
+    background: url(/images/activites/4_small/Icon-search.svg);
+    background-repeat:no-repeat;
+    height:20px;
+    align-items:center;
+}
+}
+
 .OrdreLi
 {
-    width:25%;
-    display:flex;
-    flex-direction:column;
-}
-.filtre_li /* Mettre le filtre au début de la balise Ul */ 
-{
-    align-self:flex-start;
+    width:100%;
 }
 
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
@@ -465,16 +472,20 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     margin-top:0px;
     list-style:none;
 } 
-li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
+nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     width:auto;
     margin-right:0px;
     margin-top:0px;
 }
+.filtre_li
+{
+    font-weight:bold;
+}
 .Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
 {
     display:flex;
-    flex-direction:column;
+    flex-wrap:wrap;
     width:100%;
     height:auto;
     list-style:none;
@@ -483,53 +494,72 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     font-weight:bold;
     margin:0px;
 }
-.filtre_li-Economiques, .filtre_li-Familial  /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
+.filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
-    width:auto;
-    height:auto;
-    align-self:flex-start;
-    border:11px solid #F2F2F2;
+    width:37%;
+    border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:25px 25px 25px 25px;
     margin-right:28px;
     padding:0px 25px 0px 0;
     overflow:hidden;
+    margin-bottom:20px;
 }
-.filtre_li-Romantique, .filtre_li-AnimauxAutorises
+.filtre_li-Familial 
 {
-    width:auto;
-    height:auto;
-    align-self:flex-start;
-    border:11px solid #F2F2F2;
+    width:27%;
+    border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:25px 25px 25px 25px;
     margin-right:28px;
     padding:0px 25px 0px 0;
     overflow:hidden;
+    margin-bottom:20px;
 }
+.filtre_li-Romantique
+{
+    width:36%;
+    border:11px solid #d9d9d9;
+    border-width:2px 2px 2px 0px;
+    border-radius:25px 25px 25px 25px;
+    margin-right:28px;
+    padding:0px 25px 0px 0;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.filtre_li-AnimauxAutorises
+{
+    width:47%;
+    border:11px solid #d9d9d9;
+    border-width:2px 2px 2px 0px;
+    border-radius:25px 25px 25px 25px;
+    margin-right:28px;
+    padding:0px 25px 0px 0;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
 .italic2
 {
-    width:100%;
+    width:77%;
+    display:flex;
     flex-wrap:wrap;
 }
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
-    width:auto;
-    height:auto;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 .BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
 {
     display:flex;
     flex-direction:column-reverse;
-    width:auto;
-    height:auto;
     margin-bottom:0px;
     padding-left:0px;
 }   
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:30%;
     display:flex;
     flex-direction:column;
     background-color:rgb(247, 247, 247);
@@ -537,25 +567,27 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     margin-right:0px;
     padding-right:0px;
 }
-#BlocHebergementEtPopulaireEtActivite .Hebergement img  /* Image hébergement à Marseille */ 
+#BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
-    width:100%;
+    width:426px;
+    height:55%;
 }
-.Hebergement    /* Les 6 Figures de la Section Hébergement à Marseille */ 
+
+.Hebergement1, .Hebergement    /* Les 6 Figures de la Section Hébergement à Marseille */ 
 {
-    width:25%;
+    width:426px;
     background-color:white;
     border:7px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
     margin:0px;
-
+    margin-bottom:15px;
 }
-#BlocHebergementEtPopulaireEtActivite .content    /* Div pour mettre le titre " Hébergement à Marseille " dans la Section " hébergement à Marseille sans Flex. 
+
+#BlocHebergementEtPopulaireEtActivite   /* Div pour mettre le titre " Hébergement à Marseille " dans la Section " hébergement à Marseille sans Flex. 
                                     Et pour mettre en Flex les figures et les images de la Section " Hébergement à Marseille */ 
 {
-    width:100%;
-    height:auto;
+    width:440px;
     display:flex;
     flex-direction:column;
     background-color:rgb(247, 247, 247);
@@ -563,7 +595,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
-    width:25%;
+    width:100%;
     display:flex;
     flex-direction:column;
     background-color:#F2F2F2;
@@ -572,47 +604,40 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
 {
     float:none;
-    margin-left:125px;
+    margin-left:150px;
 }
+
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
     display:flex;
     flex-direction:column;
     background-color:none;
-}
 
-#ActivitesaMarseille .content2 img     /* image FortDePomegues  */ 
+}
+#ActivitesaMarseille .content2 img
 {
     width:100%;
-    margin-right:30px;
+    height:80%;
+    object-fit:none;
 }
-
-#ActivitesaMarseille .content2 .Activites-FortDePomegues
+#ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
     width:100%;
-    height:245px;
+    height:200px;
+    margin-bottom:15px;
 }
-#ActivitesaMarseille .content2 .Activites-IlesDuFrioul
-{
-    width:100%;
-}
-
-.ActivitesaMarseille .content2 .Activites-ParcLongchamp 
-{
-    width:100%;
-}
-.ActivitesaMarseille .content2 .Activites-NotreDameDeLaGarde
+.Colone1, .Colone2, .Colone3, .Colone4
 {
     width:100%;
 }
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
-    width:auto;
-    height:auto;
     display:flex;
     flex-direction:column;
     background-color: #F2F2F2;
     margin-top:25px;
+    padding-left:30px;
+    padding-right:0px;
 }
 
 @media screen and (min-width:769px) and (max-width:1280px)
