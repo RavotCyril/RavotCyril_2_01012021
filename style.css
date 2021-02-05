@@ -30,7 +30,8 @@ body  /* Police du site */
 .NavEtLogo /* Pour que la navigation soit espacé */
 {
     display:flex;
-    justify-content:space-between;
+    flex-direction:row-reverse;
+    margin-top:-145px;
 }
 nav
 {
@@ -57,8 +58,8 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
     text-decoration:none;
-    margin-top:56px;
     color:black;
+    padding-top:56px;
 }
 .decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
 {
