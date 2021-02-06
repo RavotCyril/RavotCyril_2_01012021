@@ -23,7 +23,6 @@ body  /* Police du site */
 
 #Reservia  /* Logo */
 {
-    margin-top:56px;
     margin-bottom:41px;
     height:2.9rem;
 }
@@ -31,7 +30,6 @@ body  /* Police du site */
 {
     display:flex;
     flex-direction:row-reverse;
-    margin-top:-145px;
 }
 nav
 {
@@ -53,6 +51,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     margin-right:75px;
     margin-top:0px;
+    margin-bottom:0px;
     text-decoration:none;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
@@ -413,6 +412,7 @@ header
 #Reservia  /* Logo */
 {
     width:20%;
+    margin-bottom:0px;
 }
 .NavEtLogo /* Pour que la navigation soit en colonne */
 {
@@ -422,32 +422,35 @@ header
 
 .navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
-    width:100%;
+    width:440px;
     text-decoration:none;
     border-bottom:3px solid #0065FC;
     color:#0065FC;
     margin:0px;
     padding:0px;
-    padding-left:25px;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
     color:#0065FC;
     font-weight:bold;
     text-decoration:none;
+    float:right;
     margin:0px;
+    padding:0px;
 }
 .decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
 {
     width:auto;
     text-decoration:none;
     color:black;
+    margin-left:25px;
 }
 .decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
 {
-    width:auto;
-    padding-top:0px;
+    text-decoration:none;
+    padding:0px;
     border:none;
+    color:black;
 }
 h1
 {
@@ -609,6 +612,10 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
     background-color:#F2F2F2;
     padding-left:0px;
 }
+.Populaire  /* Figure de l'Aside"les plus populaires"   */
+{
+    margin-top:0px;
+}
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
 {
     float:none;
@@ -617,25 +624,90 @@ nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marg
 
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
+    height:1560px;
     display:flex;
     flex-direction:column;
+    justify-content:space-around;
 }
-#ActivitesaMarseille .content2 img
+
+#ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
     height:80%;
-    object-fit:none;
+    object-fit:cover;
+    object-position:50% 0%;
+}
+
+#ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 40%;
+}
+#ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 20%;
+}
+#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+}
+#ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 0%;
+}
+#ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 20%;
 }
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
     width:100%;
-    height:200px;
-    margin-bottom:15px;
+    height:220px;
+    display:flex;
+    flex-direction:column;
 }
-.Colone1, .Colone2, .Colone3, .Colone4
+.Colone1
 {
     width:100%;
+    height:240px;
+    display:flex;
+    flex-direction:column;
 }
+.Colone2
+{
+    width:100%;
+    height:480px;
+    display:flex;
+    flex-direction:column;
+}
+.Colone3
+{
+    width:100%;
+    height:240px;
+    display:flex;
+    flex-direction:column;
+}
+.Colone4 
+{
+    width:100%;
+    height:480px;
+    display:flex;
+    flex-direction:column; 
+}
+
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
     display:flex;
