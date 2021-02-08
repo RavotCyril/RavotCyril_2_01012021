@@ -13,7 +13,10 @@ header a:hover /* Pour qu'au survol les liens du header <a> soit en couleur bleu
 {
     color:#0065FC;
 }
-
+header .decoration1:hover, .decoration2:hover
+{
+    border-top:3px solid #0065FC;
+}
 body  /* Police du site */
 {
     font-family:"Raleway";
@@ -23,56 +26,51 @@ body  /* Police du site */
 
 #Reservia  /* Logo */
 {
-    margin-bottom:41px;
+    margin-top:55px;
     height:2.9rem;
 }
 .NavEtLogo /* Pour que la navigation soit espacé */
 {
-    display:flex;
-    flex-direction:row-reverse;
+    margin-top:54px;
+    float:right;
 }
 nav
 {
     display:flex;
 }
-nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
+nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et avec une marge avec un flotement à gauche. */
 {
     float:left;
-    margin-top:56px;
-    margin-right:75px;
+    margin-right:70px;
     list-style:none;
 } 
 li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
-    margin-right:0px;
+    margin-right:70px;
 }
 
 .navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
-    margin-right:75px;
     margin-top:0px;
     margin-bottom:0px;
     text-decoration:none;
 }
+
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
     text-decoration:none;
     color:black;
-    padding-top:56px;
+    float:right;
+    margin-top:54px;
 }
-.decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
+.decoration1, .decoration2 /* Pour que " activité " et "Hébergement" de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu après un hover*/
 {
     text-decoration:none;
     color:black;
-}
-.decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
-{
-    text-decoration:none;
-    border-top:3px solid #F2F2F2;
     padding:0px;
-    padding-top:55px;
-    color:black;
+    padding-top:52px;
 }
+
 .decoration3 /* Pour que les filtres ne soit pas soulignés et en couleur noir en gras et non en rouge bordeaux par défaut. */
 {
     text-decoration:none;
@@ -721,11 +719,16 @@ footer        /* Footer : Couleur de fond du footer + Flex */
 
 @media screen and (min-width:769px) and (max-width:1280px)  /* styles pour tablettes*/
 {
-    header
+header
 {
     width:100%;
 }
-}  
+
+footer
+{
+    width:100%;
+}
+}
 @media screen and (min-width:481px) and (max-width:768px)   /* styles pour mobile paysage*/
 {
     header
