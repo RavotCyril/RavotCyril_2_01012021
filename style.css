@@ -416,21 +416,19 @@ header .decoration1:hover, .decoration2:hover
 {
     width:20%;
     margin-bottom:0px;
+    margin-top:25px;
 }
-.NavEtLogo /* Pour que la navigation soit en colonne */
+nav /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
     display:flex;
-    flex-direction:column;
-}
-
-.navigation /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
-{
     width:440px;
     text-decoration:none;
     border-bottom:3px solid #f2f2f2;
     color:#0065FC;
     margin:0px;
     padding:0px;
+    margin-top:30px;
+    margin-bottom:50px;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
@@ -438,22 +436,32 @@ header .decoration1:hover, .decoration2:hover
     font-weight:bold;
     text-decoration:none;
     float:right;
-    margin-top:70px;
+    margin-top:40px;
     padding:0px;
 }
 .decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
 {
-    width:auto;
     text-decoration:none;
     color:black;
-    margin-left:25px;
+    padding-left:85px;
+    padding-right:75px;
 }
 .decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
 {
     text-decoration:none;
     padding:0px;
+    padding-right:85px;
+    padding-left:20px;
     border:none;
     color:black;
+}
+li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
+{
+    margin-right:0px;
+}
+header .decoration1:hover, .decoration2:hover
+{
+    border-bottom:3px solid #0065FC;
 }
 h1
 {
@@ -470,23 +478,21 @@ h1
 
 .OrdreLi
 {
+    display:flex;
+    flex-direction:column;
     width:100%;
 }
 
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
 {
     width:auto;
-    margin-top:0px;
+    margin:0px;
     list-style:none;
 } 
-
-nav li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
+.navigation
 {
-    width:auto;
-    margin-right:0px;
-    margin-top:0px;
+    padding-left:0px;
 }
-
 .filtre_li
 {
     font-weight:bold;
