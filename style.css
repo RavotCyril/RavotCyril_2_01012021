@@ -22,6 +22,7 @@ body  /* Police du site */
     font-family:"Raleway";
     width:1583px;
     height:2060px;
+    width:100%;
 }
 
 #Reservia  /* Logo */
@@ -401,12 +402,12 @@ body
 {
     width:98%;
     height:auto;
-    margin:0 auto;
+    margin-left:2%;
 }    
 header
 {
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:2%;
+    margin-right:2%;
 }
 header .decoration1:hover, .decoration2:hover
 {
@@ -421,7 +422,7 @@ header .decoration1:hover, .decoration2:hover
 nav /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
     display:flex;
-    width:440px;
+    width:94%;
     text-decoration:none;
     border-bottom:3px solid #f2f2f2;
     color:#0065FC;
@@ -443,14 +444,14 @@ nav /* Menu navigation " activités " et " Hébergement " sans surlignement et e
 {
     text-decoration:none;
     color:black;
-    padding-left:85px;
-    padding-right:75px;
+    padding-left:29px;
+    padding-right:120px;
 }
 .decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
 {
     text-decoration:none;
     padding:0px;
-    padding-right:85px;
+    padding-right:80px;
     padding-left:20px;
     border:none;
     color:black;
@@ -719,6 +720,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
 
 footer        /* Footer : Couleur de fond du footer + Flex */
 {
+    width:100%;
     display:flex;
     flex-direction:column;
     background-color: #F2F2F2;
@@ -730,11 +732,33 @@ footer        /* Footer : Couleur de fond du footer + Flex */
 
 @media screen and (min-width:769px) and (max-width:1280px)  /* styles pour tablettes*/
 {
+body  /* Police du site */
+{
+    height:2060px;
+    margin-right:40px;
+    width:100%;
+    height:auto;
+}
 header
 {
     width:100%;
+    margin-right:0px;
 }
 
+.blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
+{
+    padding-right:10%;
+}
+
+#BlocHebergementEtPopulaireEtActivite  /* Main */ 
+{
+    width:98%;
+    height:66%;
+    margin:30px 56px 65px;
+    border-radius:35px 35px 35px 35px;
+    margin-right:2%;
+    margin-left:0px;
+}
 footer
 {
     width:100%;
@@ -742,8 +766,55 @@ footer
 }
 @media screen and (min-width:481px) and (max-width:768px)   /* styles pour mobile paysage*/
 {
-    header
+body  /* Police du site */
+{
+    height:2060px;
+    margin-right:40px;
+    width:100%;
+    height:auto;
+}
+nav /* Pour que la navigation soit avec une marge d'hauteur de 54 px et avec un flottement à droite */
+{
+    margin-top:54px;
+    float:none;
+    display:flex;
+}
+.blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
+{
+    margin-top:70px;
+    margin-right:12%;
+}
+.Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
+{
+    display:flex;
+    flex-wrap:wrap;
+}
+h1
+{
+    width:96%;
+    flex-wrap:wrap;
+}
+.italic2
+{
+    flex-wrap:wrap;
+}
+#BlocHebergementEtPopulaireEtActivite  /* Main */ 
+{
+    width:98%;
+    height:66%;
+    margin:0px;
+    margin-right:2%;
+}
+.BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
+{
+    display:flex;
+    flex-direction:column-reverse;
+    margin-bottom:0px;
+    padding-left:0px;
+}   
+header
 {
     width:100%;
+    margin-right:0px;
 }
 }
