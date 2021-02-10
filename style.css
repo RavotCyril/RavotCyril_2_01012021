@@ -129,31 +129,34 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     padding-left:0px;
     font-weight:bold;
     margin-bottom:30.5px;
+    width:950px;
 }
 .filtre_li /* Marge à droite de la liste à puce Filtre -Li */ 
 {
-    padding-right:40px;
+    padding-right:37px;
     font-weight:bold;
     margin-top:33px;
 }
 
 .filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
-    border:11px solid #F2F2F2;
+    border:11px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:25px 25px 25px 25px;
-    margin-right:28px;
+    margin-right:40px;
     padding:0px 25px 0px 0;
     overflow:hidden;
 }
 
 .filtre_li-Economiques i, .filtre_li-Familial i, .filtre_li-Romantique i, .filtre_li-AnimauxAutorises i /* Bordure Icon Filtres: Economique, Familial, Romantique ...*/ 
 {
-    border:1rem solid #d6e7FF;
+    border:0.9rem solid #d6e7FF;
     border-radius:100%;
     color:#0065FC;
     background-color:#d6e7FF;
     margin-right:10px;
+    width:20px;
+    line-height:20px;
 }
 
 .fas.fa-star /* Couleur grise pour les étoiles vides */
@@ -478,7 +481,7 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     list-style:none;
     width: 50%;
     border-bottom:3px solid #f2f2f2;
-    text-align: center;
+    text-align:center;
 
 } 
 nav li:hover 
@@ -774,6 +777,11 @@ body  /* Police du site */
     width:100%;
     height:auto;
 }
+header
+{
+    width:100%;
+    margin-right:0px;
+}
 nav /* Pour que la navigation soit avec une marge d'hauteur de 54 px et avec un flottement à droite */
 {
     margin-top:54px;
@@ -801,21 +809,131 @@ h1
 }
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
-    width:98%;
+    width:94%;
     height:66%;
     margin:0px;
-    margin-right:2%;
+    margin-right:3%;
+    margin-left:3%;
+    margin-bottom:2%;
+    margin-top:2%;
+}
+#BlocHebergementEtPopulaireEtActivite .content   /* Image hébergement à Marseille */ 
+{
+    flex-direction:column;
+    width:100%;
+    margin-top:6%;
 }
 .BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
 {
+    width:100%;
     display:flex;
     flex-direction:column-reverse;
     margin-bottom:0px;
-    padding-left:0px;
-}   
-header
+    padding:0px;
+}
+#HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
     width:100%;
-    margin-right:0px;
+    margin-top:2%;
+    padding:0px;
+}
+#BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
+{
+    width:100%;
+    height:55%;
+}
+
+.Hebergement1, .Hebergement    /* Les 6 Figures de la Section Hébergement à Marseille */ 
+{
+    width:98%;
+}
+#LesPlusPopulaires
+{
+    width:98%;
+    padding:0px;
+}
+#ActivitesaMarseille .content2
+{
+    flex-direction:column;
+    width:98%;
+    margin-right:2%;
+}
+
+#ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:50% 0%;
+}
+
+#ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 40%;
+}
+#ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 20%;
+}
+#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+}
+#ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 0%;
+}
+#ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 20%;
+}
+#ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
+{
+    width:100%;
+    height:220px;
+    display:flex;
+    flex-direction:column;
+}
+.Colone1
+{
+    width:100%;
+    height:240px;
+    display:flex;
+    flex-direction:column;
+}
+.Colone2
+{
+    width:100%;
+    height:480px;
+    display:flex;
+    flex-direction:column;
+}
+.Colone3
+{
+    width:100%;
+    height:240px;
+    display:flex;
+    flex-direction:column;
+}
+.Colone4 
+{
+    width:100%;
+    height:480px;
+    display:flex;
+    flex-direction:column; 
 }
 }
