@@ -235,23 +235,9 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     border-radius:35px 35px 35px 35px;
 }
 
-.Hebergement1    /* Les 3 Figures Hébergement 4-5-6 de la Section Hébergement à Marseille sans margin bottom */ 
+.Hebergement    /* Les 6 Figures Hébergement de la Section Hébergement à Marseille */ 
 {
-    width:250px;
-    height:245px;
-    background-color:white;
-    border:7px solid white;
-    border-radius:35px 35px 35px 35px; 
-    overflow:hidden;
-    margin-top:0px;
-    margin-right:0px;
-    margin-left:0px;
-    margin-bottom:25px;    
-}
-
-.Hebergement    /* Les 3 Figures Hébergement 4-5-6 de la Section Hébergement à Marseille sans margin bottom */ 
-{
-    width:250px;
+    width:245px;
     height:245px;
     background-color:white;
     border:7px solid white;
@@ -259,7 +245,10 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     overflow:hidden;
     margin:0px;
 }
-
+#HebergementaMarseille .content .MargeBottomCarte
+{
+    margin-bottom:25px;
+}
 .AfficherPlus 
 {
     font-weight:bold;
@@ -284,7 +273,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     display:flex;
     background-color:white;
     width:89%;
-    height:22.25%;
+    height:22%;
     border:6px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
@@ -424,12 +413,11 @@ nav /* Menu navigation " activités " et " Hébergement " sans surlignement et e
     display:flex;
     width:94%;
     text-decoration:none;
-    border-bottom:3px solid #f2f2f2;
     color:#0065FC;
     margin:0px;
     padding:0px;
     margin-top:30px;
-    margin-bottom:50px;
+    margin-bottom:0px;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
@@ -444,8 +432,7 @@ nav /* Menu navigation " activités " et " Hébergement " sans surlignement et e
 {
     text-decoration:none;
     color:black;
-    padding-left:29px;
-    padding-right:120px;
+  
 }
 .decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
 {
@@ -489,10 +476,24 @@ nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en l
     width:auto;
     margin:0px;
     list-style:none;
+    width: 50%;
+    border-bottom:3px solid #f2f2f2;
+    text-align: center;
+
 } 
+nav li:hover 
+{
+    border-bottom-color: #0065FC;
+}
+nav li:hover a 
+{
+    color: #0065FC;
+
+}
 .navigation
 {
     padding-left:0px;
+    width: 100%;
 }
 .filtre_li
 {
