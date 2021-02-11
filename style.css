@@ -107,14 +107,26 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     font-weight:bold;
     overflow:hidden;
     padding:1.2rem;
+    border:1px solid #F2F2F2;
 }
-.BoutonRechercher /* Contenue du bouton " Rechercher"  */
+.BoutonRechercher /* Bouton " Rechercher" Desktop */
 {
     background-color:#0065FC;
     color:white;
     font-weight:bold;
     border:none;
     border-radius:0 0.7rem 0.7rem 0;
+    cursor:pointer;
+}
+.IconLocalisation span i /* Bouton rechercher Mobile*/
+{
+    display:none;
+    border:1px solid #0065FC ;
+    background-color:#0065FC;
+    border-width:18px;
+    border-radius:15px;
+    overflow:hidden;
+    color:white;
     cursor:pointer;
 }
 .OrdreLi
@@ -459,14 +471,21 @@ h1
     width:70%;
     flex-wrap:wrap;
 }
-.BoutonRechercher/* Contenue du bouton " Rechercher"  */
+.BoutonRechercher
 {
-    background: url(/images/activites/4_small/Icon-search.svg);
-    background-repeat:no-repeat;
-    height:20px;
-    align-items:center;
+    display:none;
 }
-
+.IconLocalisation span i /* Cercle Icon localisation */
+{
+    display:inline-block;
+    border:1px solid #0065FC ;
+    background-color:#0065FC;
+    border-width:18px;
+    border-radius:15px;
+    overflow:hidden;
+    color:white;
+    cursor:pointer;
+}
 .OrdreLi
 {
     display:flex;
