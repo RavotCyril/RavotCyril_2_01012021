@@ -912,6 +912,11 @@ h1
 {
     margin-bottom:13px;
 }
+.MargeBottomCarte3
+{
+    margin-bottom:23px;
+}
+
 #BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
     width:100%;
@@ -941,7 +946,7 @@ h1
     display:flex;
     flex-direction:column;
     padding:0px;
-    margin-bottom:48px;
+    margin-bottom:26px;
     margin-top:40px;
     margin-left:0px;
     margin-right:0px;
@@ -998,10 +1003,10 @@ h1
 }
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
-    height:1560px;
+    height:1458px;
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    margin-top:33px;
 }
 
 #ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
@@ -1009,7 +1014,7 @@ h1
     width:100%;
     height:80%;
     object-fit:cover;
-    object-position:50% 0%;
+    object-position:0% 0%;
 }
 
 #ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
@@ -1017,20 +1022,21 @@ h1
     width:100%;
     height:80%;
     object-fit:cover;
-    object-position:0% 40%;
+    object-position:0% 35%;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
 {
     width:100%;
     height:80%;
     object-fit:cover;
-    object-position:0% 20%;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
 {
     width:100%;
     height:80%;
     object-fit:cover;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
 {
@@ -1043,8 +1049,7 @@ h1
 {
     width:100%;
     height:80%;
-    object-fit:cover;
-    object-position:0% 20%;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
@@ -1054,33 +1059,19 @@ h1
     flex-direction:column;
     box-shadow:0px 5px 5px #f2f2f2;
 }
-.Colone1
+.Colone1, .Colone3
 {
     width:100%;
-    height:240px;
+    height:243px;
     display:flex;
     flex-direction:column;
 }
-.Colone2
+.Colone2, .Colone4 
 {
     width:100%;
-    height:480px;
+    height:486px;
     display:flex;
     flex-direction:column;
-}
-.Colone3
-{
-    width:100%;
-    height:240px;
-    display:flex;
-    flex-direction:column;
-}
-.Colone4 
-{
-    width:100%;
-    height:480px;
-    display:flex;
-    flex-direction:column; 
 }
 
 footer        /* Footer : Couleur de fond du footer + Flex */
