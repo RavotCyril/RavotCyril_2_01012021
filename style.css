@@ -686,7 +686,32 @@ nav /* Menu navigation " activités " et " Hébergement " sans surlignement et e
     margin:0px;
     padding:0px;
     margin-top:40px;
-    margin-bottom:30px;
+}
+
+nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
+{
+    width:auto;
+    margin:0px;
+    list-style:none;
+    width: 50%;
+    border-bottom:3px solid #f2f2f2;
+    text-align:center;
+    padding-bottom:13px;
+    margin-bottom:35px;
+} 
+nav li:hover 
+{
+    border-bottom-color: #0065FC;
+}
+nav li:hover a 
+{
+    color: #0065FC;
+
+}
+.navigation
+{
+    padding-left:0px;
+    width: 100%;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
@@ -754,38 +779,15 @@ h1
 {
     margin-left:5.5%;
 }
-
+.IconLocalisation
+{
+    width:100%;
+}
 .OrdreLi
 {
     display:flex;
     flex-direction:column;
     width:100%;
-}
-
-nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
-{
-    width:auto;
-    margin:0px;
-    list-style:none;
-    width: 50%;
-    border-bottom:3px solid #f2f2f2;
-    text-align:center;
-    padding-bottom:18px;
-    margin-bottom:35px;
-} 
-nav li:hover 
-{
-    border-bottom-color: #0065FC;
-}
-nav li:hover a 
-{
-    color: #0065FC;
-
-}
-.navigation
-{
-    padding-left:0px;
-    width: 100%;
 }
 .filtre_li
 {
@@ -870,6 +872,7 @@ nav li:hover a
     display:flex;
     flex-wrap:wrap;
 }
+
 .IconInformation i   /* Cercle Icon Information */
 {
     display:flex;
@@ -891,6 +894,7 @@ nav li:hover a
     margin-bottom:0px;
     padding-left:0px;
 }   
+
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
     width:100%;
@@ -903,13 +907,19 @@ nav li:hover a
     margin-left:6%;
     margin-right:6%;
 }
+
+#HebergementaMarseille .content .MargeBottomCarte, .MargeBottomCarte2
+{
+    margin-bottom:13px;
+}
 #BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
     width:100%;
 }
+
 #HebergementaMarseille .content
 {
-    width:335px;
+    width:100%;
     background-color:white;
 }
 .Hebergement /* Les 6 Figures de la Section Hébergement à Marseille */ 
@@ -921,7 +931,7 @@ nav li:hover a
     box-shadow:0px 5px 20px #f2f2f2;
     overflow:hidden;
     margin:0px;
-    margin-bottom:15px;
+    margin-bottom:0px;
 }
 
 #BlocHebergementEtPopulaireEtActivite   /* Div pour mettre le titre " Hébergement à Marseille " dans la Section " hébergement à Marseille sans Flex. 
