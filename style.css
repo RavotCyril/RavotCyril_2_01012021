@@ -660,6 +660,8 @@ body
 {
     width:100%;
     height:auto;
+    overflow-x:hidden;
+
 }    
 header
 {
@@ -782,6 +784,8 @@ h1
 .IconLocalisation
 {
     width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 .OrdreLi
 {
@@ -811,7 +815,7 @@ h1
 }
 .filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
-    width:50%;
+    width:51%;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -824,7 +828,7 @@ h1
 
 .filtre_li-Familial 
 {
-    width:34%;
+    width:38%;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -837,7 +841,7 @@ h1
 
 .filtre_li-Romantique
 {
-    width:44%;
+    width:46%;
     border:11px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -856,7 +860,7 @@ h1
 
 .filtre_li-AnimauxAutorises
 {
-    width:57%;
+    width:62%;
     border:11px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -957,7 +961,7 @@ h1
     display:flex;
     flex-direction:column;
     background-color:#F2F2F2;
-    padding-top:9px;
+    padding-top:5px;
     padding-bottom:27px;
     padding-left:6%;
     padding-right:6%;
@@ -965,22 +969,34 @@ h1
 }
 .Populaire  /* Figure de l'Aside"les plus populaires"   */
 {
-    width:97%;
-    height:132px;
+    width:99%;
+    height:133px;
     margin-top:0px;
     margin-right:0px;
+    padding-bottom:0px;
     margin-bottom:10px;
-    padding-bottom:20px;
+}
+#LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
+{
+    width:128px;
+    height:133px;
 }
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
 {
-    float:none;
-    margin-left:23%;
+    float:right;
     margin-right:0px;
+}
+#LesPlusPopulaires h2
+{
+    width:100%;
 }
 .MargePopulaire /* Mise en place des Figcaptions des figures de l'Aside "les plus populaires"   */
 {
-    margin-left:20px;
+    margin-left:6%;
+}
+#LesPlusPopulaires figure i
+{
+    font-size:12px;
 }
 .bold1
 {
@@ -988,7 +1004,7 @@ h1
 }
 .MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
 {
-    margin-top:44px;
+    margin-top:25px;
 }
 .AfficherPlus 
 {
