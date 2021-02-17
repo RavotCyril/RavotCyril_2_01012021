@@ -20,8 +20,7 @@ header .decoration1:hover, .decoration2:hover
 body  /* Police du site */
 {
     font-family:"Raleway";
-    width:1583px;
-    height:2060px;
+    
     width:100%;
 }
 
@@ -401,14 +400,12 @@ footer        /* Footer : Couleur de fond du footer + Flex */
     padding:2% 30px 2%;
 }
 
-@media screen and (min-width:769px) and (max-width:1280px)  /* styles pour tablettes*/
+@media screen and (min-width:1090px) and (max-width:1280px)  /* styles pour tablettes*/
 {
 body  /* Police du site */
 {
-    height:2060px;
     margin-right:40px;
     width:100%;
-    height:auto;
 }
 header
 {
@@ -443,6 +440,10 @@ header
 {
     width:100%;
 }
+.MargeBottomCarte2
+{
+    margin-bottom:25px;
+}
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
     width:50%;
@@ -459,7 +460,6 @@ header
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
     width:100%;
-    height:66%;
     margin-left:0px;
     margin-right:0px;
     margin-top:30px;
@@ -480,11 +480,60 @@ footer
     padding-right:2%;
 }
 }
+@media screen and (min-width:769px) and (max-width:1089px)  /* styles pour tablettes*/
+{
+body
+{
+    width:100%
+}
+.Hebergement    /* Les 6 Figures Hébergement de la Section Hébergement à Marseille */ 
+{
+    width:450px;
+}
+#BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
+{
+    width:450px;
+    height:135px;
+}
+#HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
+{
+    width:100%;
+    background-color:#F2F2F2;
+    padding-right:20px;
+    padding-left:20px;
+    margin-right:20px;
+    border-radius:35px 35px 35px 35px;
+}
+#HebergementaMarseille .content
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.MargeBottomCarte2
+{
+    margin-bottom:25px;
+}
+#LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
+{
+    width:80%;
+    background-color:#F2F2F2;
+    border-radius:35px 35px 35px 35px;
+    padding-left:37px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
+{
+    width:66%;
+    height:450px;
+}    
+}
 @media screen and (min-width:376px) and (max-width:768px)   /* styles pour mobile paysage*/
 {
 body  /* Police du site */
 {
-    height:2060px;
     margin-right:40px;
     width:100%;
     height:auto;
@@ -521,11 +570,10 @@ h1
 }
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
-    width:94%;
-    height:66%;
+    width:100%;
     margin:0px;
-    margin-right:3%;
-    margin-left:3%;
+    margin-right:0px;
+    margin-left:0px;
     margin-bottom:6%;
     margin-top:2%;
 }
@@ -534,6 +582,7 @@ h1
     flex-direction:column;
     width:100%;
     margin-top:6%;
+    background:none;
 }
 .BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
 {
@@ -545,9 +594,10 @@ h1
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:100%;
+    width:88%;
     margin-top:2%;
-    padding:0px;
+    padding:0px 6%;
+    background:none;
 }
 #BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
@@ -565,14 +615,14 @@ h1
 }
 #LesPlusPopulaires
 {
-    width:98%;
-    padding:0px;
+    width:88%;
+    padding:0px 6%;
+    border-radius:0;
 }
 #ActivitesaMarseille .content2
 {
     flex-direction:column;
     width:100%;
-    height:2820px;
 }
 #ActivitesaMarseille 
 {
@@ -623,7 +673,6 @@ h1
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
     width:95%;
-    height:5000px;
     display:flex;
     flex-direction:column;
     margin-bottom:20px;
@@ -740,6 +789,18 @@ nav li:hover a
     border:none;
     color:black;
 }
+.decoration3
+{
+    display:inline-block;
+    border:2px solid #d9d9d9; 
+    border-radius:100px;
+    height:46px;
+    line-height:48px;
+    width:calc(100% -56px);
+    padding-left:50px;
+    margin-left:2px;
+    z-index:0;
+}
 li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     margin-right:0px;
@@ -763,6 +824,8 @@ h1
 #site-search /* Barre de rechercher "   */
 {
     padding:0.5rem;
+    border:none;
+    overflow:hidden;
 }
 .IconLocalisation span i /* Cercle Icon localisation */
 {
@@ -783,9 +846,13 @@ h1
 }
 .IconLocalisation
 {
+    display:inline-flex;
+    height:50px;
     width:100%;
     overflow-x:hidden;
     overflow-y:hidden;
+    margin-bottom:20px;
+    border:1px solid #d9d9d9;
 }
 .OrdreLi
 {
@@ -828,8 +895,11 @@ h1
 
 .filtre_li-Familial 
 {
+    position:relative;
+    height:50px;
+    line-height:50px;
     width:38%;
-    border:1px solid #d9d9d9;
+    border:none;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
     padding:0px 20px 0px 0px;
@@ -893,6 +963,7 @@ h1
 
 .BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
 {
+    width:100%;
     display:flex;
     flex-direction:column-reverse;
     margin-bottom:0px;
@@ -946,7 +1017,7 @@ h1
 #BlocHebergementEtPopulaireEtActivite   /* Div pour mettre le titre " Hébergement à Marseille " dans la Section " hébergement à Marseille sans Flex. 
                                     Et pour mettre en Flex les figures et les images de la Section " Hébergement à Marseille */ 
 {
-    width:89%;
+    width:100%;
     display:flex;
     flex-direction:column;
     padding:0px;
@@ -1019,7 +1090,6 @@ h1
 }
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
-    height:1458px;
     display:flex;
     flex-direction:column;
     margin-top:33px;
