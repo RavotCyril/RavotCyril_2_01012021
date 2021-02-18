@@ -542,12 +542,48 @@ header
 {
     width:100%;
     margin-right:0px;
+    margin-left:0px;
 }
-nav /* Pour que la navigation soit avec une marge d'hauteur de 54 px et avec un flottement à droite */
+
+nav /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
-    margin-top:54px;
-    float:none;
     display:flex;
+    width:100%;
+    text-decoration:none;
+    color:#0065FC;
+    margin:0px;
+    padding:0px;
+    margin-top:40px;
+}
+
+nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
+{
+    width:auto;
+    margin:0px;
+    list-style:none;
+    width: 50%;
+    border-bottom:3px solid #f2f2f2;
+    text-align:center;
+    padding-bottom:13px;
+    margin-bottom:35px;
+} 
+nav li:hover 
+{
+    border-bottom-color: #0065FC;
+}
+
+header .decoration1:hover, .decoration2:hover
+{
+    border-top:none;
+}
+li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
+{
+    margin-right:0px;
+}
+.navigation
+{
+    padding-left:0px;
+    width: 100%;
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
@@ -564,6 +600,7 @@ h1
     width:96%;
     flex-wrap:wrap;
 }
+
 .italic2
 {
     flex-wrap:wrap;
@@ -842,17 +879,23 @@ h1
 }
 .IconLocalisation i
 {
-    margin-left:5.5%;
+    margin-left:0%;
+    border-radius:15px 0px 0px 15px;
+    width:14px;
 }
 .IconLocalisation
 {
     display:inline-flex;
     height:50px;
-    width:100%;
+    width:85%;
     overflow-x:hidden;
     overflow-y:hidden;
+    overflow:hidden;
     margin-bottom:20px;
-    border:1px solid #d9d9d9;
+    border:1px solid #f2f2f2;
+    border-width:1px 0px;
+    margin-left:20px;
+    border-radius:15px;
 }
 .OrdreLi
 {
