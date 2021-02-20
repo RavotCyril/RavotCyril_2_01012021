@@ -748,7 +748,7 @@ body
     height:auto;
     overflow-x:hidden;
 
-}    
+}
 header
 {
     width:100%;
@@ -846,9 +846,10 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 
 h1
 {
-    width:90%;
-    margin-left:20px;
+    width:94%;
+    margin-left:5.5%;
     flex-wrap:wrap;
+    margin-top:0px;
 }
 .italic1
 {
