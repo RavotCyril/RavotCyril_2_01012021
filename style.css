@@ -774,6 +774,7 @@ nav /* Menu navigation " activités " et " Hébergement " sans surlignement et e
     margin:0px;
     padding:0px;
     margin-top:40px;
+    float:none;
 }
 
 nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
@@ -815,7 +816,7 @@ nav li:hover a
 {
     text-decoration:none;
     color:black;
-  
+    padding-top:0px;
 }
 .decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
 {
@@ -829,13 +830,13 @@ nav li:hover a
 .decoration3
 {
     display:inline-block;
-    border:2px solid #d9d9d9; 
+    border:none; 
     border-radius:100px;
     height:46px;
     line-height:48px;
     width:calc(100% -56px);
-    padding-left:50px;
-    margin-left:2px;
+    padding-left:5px;
+    margin-left:0px;
     z-index:0;
 }
 li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
@@ -846,13 +847,13 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 h1
 {
     width:90%;
-    margin-top:0px;
-    margin-bottom:0px;
-    margin-left:5.5%;
+    margin-left:20px;
+    flex-wrap:wrap;
 }
 .italic1
 {
     margin-left:5.5%;
+    margin-top:0px;
 }
 .BoutonRechercher
 {
@@ -891,7 +892,8 @@ h1
     overflow-x:hidden;
     overflow-y:hidden;
     overflow:hidden;
-    margin-bottom:20px;
+    margin-bottom:35px;
+    margin-top:20px;
     border:1px solid #f2f2f2;
     border-width:1px 0px;
     margin-left:20px;
@@ -907,6 +909,7 @@ h1
 {
     font-weight:bold;
     margin-left:5.5%;
+    margin-top:0px;
 }
 
 .Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
@@ -925,7 +928,7 @@ h1
 }
 .filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
-    width:51%;
+    width:50%;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -933,35 +936,41 @@ h1
     overflow:hidden;
     margin-bottom:15px;
     margin-right:12px;
-    
 }
 
 .filtre_li-Familial 
 {
-    position:relative;
-    height:50px;
-    line-height:50px;
-    width:38%;
-    border:none;
+    width:36%;
+    border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
-    padding:0px 20px 0px 0px;
+    padding:0px 5px 0px 0px;
     overflow:hidden;
+    margin-right:27px;
     margin-bottom:15px;
-    margin-right:0px;
-
 }
 
 .filtre_li-Romantique
 {
     width:46%;
-    border:11px solid #d9d9d9;
+    border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
-    padding:0px 15px 0px 0;
+    padding:0px 8px 0px 0px;
     overflow:hidden;
-    margin-bottom:15px;
     margin-right:0px;
+    margin-bottom:15px;
+}
+.filtre_li-AnimauxAutorises
+{
+    width:60%;
+    border:1px solid #d9d9d9;
+    border-width:2px 2px 2px 0px;
+    border-radius:100px;
+    padding:0px 12px 0px 0px;
+    overflow:hidden;
+    margin-right:28px;
+    margin-bottom:33px;
 }
 .filtre_li-Economiques i, .filtre_li-Familial i, .filtre_li-Romantique i, .filtre_li-AnimauxAutorises i
 {
@@ -969,18 +978,6 @@ h1
     width:22px;
     height:22px;
     text-align:center;
-}
-
-.filtre_li-AnimauxAutorises
-{
-    width:62%;
-    border:11px solid #d9d9d9;
-    border-width:2px 2px 2px 0px;
-    border-radius:100px;
-    margin-right:28px;
-    padding:0px 15px 0px 0;
-    overflow:hidden;
-    margin-bottom:33px;
 }
 
 .italic2
@@ -1015,15 +1012,15 @@ h1
 
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:100%;
+    width:89%;
     display:flex;
     flex-direction:column;
     padding-left:0px;
     padding-right:0px;
     background-color:white;
     margin-top:5px;
-    margin-left:6%;
-    margin-right:6%;
+    margin-left:5.5%;
+    margin-right:5.5%;
 }
 
 #HebergementaMarseille .content .MargeBottomCarte, .MargeBottomCarte2
@@ -1071,19 +1068,19 @@ h1
 }
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
-    width:100%;
+    width:89%;
     display:flex;
     flex-direction:column;
     background-color:#F2F2F2;
     padding-top:5px;
     padding-bottom:27px;
-    padding-left:6%;
-    padding-right:6%;
+    padding-left:5.5%;
+    padding-right:5.5%;
     border-radius:0px;
 }
 .Populaire  /* Figure de l'Aside"les plus populaires"   */
 {
-    width:99%;
+    width:97%;
     height:133px;
     margin-top:0px;
     margin-right:0px;
@@ -1128,8 +1125,9 @@ h1
 }
 #ActivitesaMarseille
 {
-    margin-left:6%;
-    margin-right:6%;
+    width:89%;
+    margin-left:5.5%;
+    margin-right:5.5%;
 }
 #ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
 {
