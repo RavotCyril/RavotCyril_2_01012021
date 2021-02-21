@@ -181,7 +181,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 .MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
 {
-    margin-top:50px;
+    margin-top:20px;
 }
 
 .bold2 /*  Tous les titres des figures de la session " Activité à Marseille" en Gras */
@@ -193,8 +193,21 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .bold1 /*  Tous les titres des figures de la session " Hébergement à Marseille" en Gras */
 {
     font-weight:bold;
+    margin-top:13px;
+    margin-bottom:10px;
 }
-
+.euro
+{
+    font-weight:bold;
+    width:13px;
+}
+.TextePopulaire
+{
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size:0.88em;
+    width:135px;
+}
 .IconInformation /* Icon Information contenue */
 {
     display:flex;
@@ -835,7 +848,7 @@ nav li:hover a
     height:46px;
     line-height:48px;
     width:calc(100% -56px);
-    padding-left:5px;
+    padding-left:0px;
     margin-left:0px;
     z-index:0;
 }
@@ -945,7 +958,7 @@ h1
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
-    padding:0px 5px 0px 0px;
+    padding:0px 6px 0px 0px;
     overflow:hidden;
     margin-right:27px;
     margin-bottom:15px;
@@ -1110,13 +1123,10 @@ h1
 {
     font-size:12px;
 }
-.bold1
-{
-    margin-bottom:13px;
-}
+
 .MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
 {
-    margin-top:25px;
+    margin-top:35px;
 }
 .AfficherPlus 
 {
