@@ -167,6 +167,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     margin-right:10px;
     width:20px;
     line-height:20px;
+    text-align:center;
 }
 
 .fas.fa-star /* Couleur grise pour les étoiles vides */
@@ -180,7 +181,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 .MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
 {
-    margin-top:40px;
+    margin-top:43px;
     font-size:13px;
 }
 .TailleStarhebergement
@@ -257,7 +258,6 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     display:flex;
     margin-bottom:74px;
-    height:690px;
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
@@ -271,7 +271,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .Hebergement    /* Les 6 Figures Hébergement de la Section Hébergement à Marseille */ 
 {
     width:250px;
-    height:215px;
+    height:220px;
     background-color:white;
     border:7px solid white;
     border-radius:35px 35px 35px 35px; 
@@ -286,8 +286,8 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .AfficherPlus 
 {
     font-weight:bold;
-    margin-top:52px;
-    margin-bottom:0px;
+    margin-top:55px;
+    margin-bottom:55px;
 }
 
 #LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
@@ -306,8 +306,8 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     display:flex;
     background-color:white;
-    width:89%;
-    height:22%;
+    width:87%;
+    height:21%;
     border:6px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
