@@ -495,7 +495,8 @@ header
 footer
 {
     width:96%;
-    padding:0px;
+    padding-top:0px;
+    padding-bottom:0px;
     padding-left:2%;
     padding-right:2%;
 }
@@ -549,6 +550,24 @@ body
     width:66%;
     height:450px;
 }    
+footer
+{
+    width:96%;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:2%;
+    padding-right:2%;
+}
+#Apropos, #NosHebergements, #Assistance
+
+{
+    width:32%;
+}
+#NosHebergements
+{
+    width:32%;
+
+}
 }
 @media screen and (min-width:376px) and (max-width:768px)   /* styles pour mobile paysage*/
 {
@@ -556,7 +575,13 @@ body  /* Police du site */
 {
     margin-right:40px;
     width:100%;
-    height:auto;
+}
+#Reservia  /* Logo */
+{
+    height:2.9rem;
+    margin-bottom:0px;
+    margin-top:55px;
+    margin-left:5.5%;
 }
 header
 {
@@ -608,7 +633,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
     margin-top:70px;
-    margin-right:12%;
+    margin-right:2%;
 }
 .Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
 {
@@ -619,8 +644,27 @@ h1
 {
     width:96%;
     flex-wrap:wrap;
+    margin-left:5.5%;
 }
-
+.italic1
+{
+    margin-left:5.5%;
+}
+.IconLocalisation
+{
+    margin-left:5.5%;
+}
+.OrdreLi
+{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    margin-left:5.5%;
+}
+.IconInformation i   /* Cercle Icon Information */
+{
+    margin-left:5.5%;
+}
 .italic2
 {
     flex-wrap:wrap;
@@ -651,113 +695,627 @@ h1
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:88%;
+    width:89%;
     margin-top:2%;
-    padding:0px 6%;
+    padding:0px;
     background:none;
+    margin-left:5.5%;
+    margin-right:5.5%;
 }
-#BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
-{
-    width:100%;
-    height:55%;
-}
-#HebergementaMarseille .content .MargeBottomCarte
+#HebergementaMarseille h2
 {
     margin-bottom:0px;
 }
+#BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
+{
+    width:75%;
+    height:60%;
+    border-radius:35px 35px 0px 0px; 
+}
+#HebergementaMarseille .content .MargeBottomCarte, .MargeBottomCarte2
+{
+    margin-bottom:13px;
+}
+.MargeBottomCarte3
+{
+    margin-bottom:23px;
+}
 .Hebergement    /* Les 6 Figures de la Section Hébergement à Marseille */ 
 {
-    width:98%;
-    margin-bottom:15px;
+    width:98.4%;
+    background-color:white;
+    border:7px solid white;
+    box-shadow: 0px 5px 20px #f2f2f2;
+    border-radius:35px 35px 35px 35px; 
+    overflow:hidden;
 }
 #LesPlusPopulaires
 {
-    width:88%;
+    width:89%;
     padding:0px 6%;
     border-radius:0;
+    padding-left:5.5%;
+    padding-right:5.5%;
 }
-#ActivitesaMarseille .content2
+.Populaire
 {
+    width:98.4%;
+    margin-right:0px;
+}
+#LesPlusPopulaires .Populaire img
+{
+    width:50%;
+}
+#ActivitesaMarseille
+{
+    width:89%;
+    margin-left:5.5%;
+    margin-right:5.5%;
+}
+#ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
+{
+    display:flex;
     flex-direction:column;
-    width:100%;
+    margin-top:33px;
 }
-#ActivitesaMarseille 
-{
-    width:100%;
-}
+
 #ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
-    height:auto;
-    object-fit:cover;
-    object-position:50% 0%;
+    height:80%;
+    object-fit:inherit;
+    object-position:0% 0%;
+    border-radius:35px 35px 0px 0px; 
+}
 
+#ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
+{
+    width:99%;
+    height:80%;
+    object-fit:inherit;
+    border-radius:35px 35px 0px 0px; 
+
+}
+#ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:inherit;
+    object-position:0% 0%;
+    border-radius:35px 35px 0px 0px; 
+
+}
+#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
+{
+    width:100%;
+    height:80%;
+    object-fit:inherit;
+    object-position:0% 0%;
+    border-radius:35px 35px 0px 0px; 
+
+}
+#ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
+{
+    width:100%;
+    height:80%;
+    object-fit:inherit;
+    object-position:0% 0%;
+    border-radius:35px 35px 0px 0px; 
+
+}
+#ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
+{
+    width:100;
+    height:80%;
+    object-fit:inherit;
+    object-position:0% 0%;
+    
+}
+#ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
+{
+    width:100%;
+    height:220px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:5px 5px 5px #f2f2f2;
+}
+.Colone1, .Colone3
+{
+    width:100%;
+    height:243px;
+    display:flex;
+    flex-direction:column;
+}
+.Colone2, .Colone4 
+{
+    width:100%;
+    height:486px;
+    display:flex;
+    flex-direction:column;
+}
+
+footer
+{
+    width:96%;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:2%;
+    padding-right:2%;
+}
+}
+@media screen and (max-width:414px)   /* styles pour mobile paysage*/
+{
+body
+{
+    width:100%;
+    overflow-x:hidden;
+
+}
+header
+{
+    width:100%;
+    margin:0px;
+}
+header .decoration1:hover, .decoration2:hover
+{
+    border-top:0px;
+}
+#Reservia  /* Logo */
+{
+    width:20%;
+    margin-bottom:0px;
+    margin-top:25px;
+    margin-left:5.5%;
+}
+nav /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
+{
+    display:flex;
+    width:100%;
+    text-decoration:none;
+    color:#0065FC;
+    margin:0px;
+    padding:0px;
+    margin-top:40px;
+    float:none;
+}
+
+nav li  /* Pour que la navigation soit aligné sur la meme ligne et non pas en liste et une marge */
+{
+    width:auto;
+    margin:0px;
+    list-style:none;
+    width: 50%;
+    border-bottom:3px solid #f2f2f2;
+    text-align:center;
+    padding-bottom:13px;
+    margin-bottom:35px;
+} 
+nav li:hover 
+{
+    border-bottom-color: #0065FC;
+}
+nav li:hover a 
+{
+    color: #0065FC;
+
+}
+.navigation
+{
+    padding-left:0px;
+    width: 100%;
+}
+.blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel en hover et sans soulignement */
+{
+    font-weight:bold;
+    text-decoration:none;
+    float:right;
+    margin-top:40px;
+    padding-bottom:0px;
+    padding-right:20px;
+}
+.decoration1 /* Pour que " activité " de  navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement */
+{
+    text-decoration:none;
+    color:black;
+    padding-top:0px;
+}
+.decoration2 /* Pour que "Hébergement" de navigation soit de couleur noir et non rouge bordeaux comme par défaut et sans soulignement + la bande en bleu */
+{
+    text-decoration:none;
+    padding:0px;
+    padding-right:80px;
+    padding-left:40px;
+    border:none;
+    color:black;
+}
+.decoration3
+{
+    display:inline-block;
+    border:none; 
+    border-radius:100px;
+    height:46px;
+    line-height:48px;
+    width:calc(100% -56px);
+    padding-left:0px;
+    margin-left:0px;
+    z-index:0;
+}
+li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
+{
+    margin-right:0px;
+}
+
+h1
+{
+    width:85%;
+    margin-left:5.5%;
+    flex-wrap:wrap;
+    margin-top:0px;
+}
+#ActivitesaMarseille h2
+{
+    margin-bottom:0px;
+}
+.italic1
+{
+    margin-left:5.5%;
+    margin-top:0px;
+}
+#site-search /* Barre de rechercher "   */
+{
+    padding:0.5rem;
+    border:none;
+    overflow:hidden;
+}
+
+.IconLocalisation i
+{
+    margin-left:0%;
+    border-radius:15px 0px 0px 15px;
+    width:14px;
+}
+.IconLocalisation
+{
+    display:inline-flex;
+    height:50px;
+    width:85%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    overflow:hidden;
+    margin-bottom:35px;
+    margin-top:20px;
+    border:1px solid #f2f2f2;
+    border-width:1px 0px;
+    margin-left:20px;
+    border-radius:15px;
+}
+.OrdreLi
+{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+.filtre_li
+{
+    font-weight:bold;
+    margin-left:5.5%;
+    margin-top:0px;
+}
+
+.Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
+{
+    display:flex;
+    flex-wrap:wrap;
+    width:94.5%;
+    list-style:none;
+    align-items:center;
+    padding:0px;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:5.5%;
+}
+.filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
+{
+    width:50%;
+    border:1px solid #d9d9d9;
+    border-width:2px 2px 2px 0px;
+    border-radius:100px;
+    padding:0px 0px 0px 0px;
+    overflow:hidden;
+    margin-bottom:15px;
+    margin-right:12px;
+}
+
+.filtre_li-Familial 
+{
+    width:36%;
+    border:1px solid #d9d9d9;
+    border-width:2px 2px 2px 0px;
+    border-radius:100px;
+    padding:0px 6px 0px 0px;
+    overflow:hidden;
+    margin-right:27px;
+    margin-bottom:15px;
+}
+
+.filtre_li-Romantique
+{
+    width:46%;
+    border:1px solid #d9d9d9;
+    border-width:2px 2px 2px 0px;
+    border-radius:100px;
+    padding:0px 8px 0px 0px;
+    overflow:hidden;
+    margin-right:0px;
+    margin-bottom:15px;
+}
+.filtre_li-AnimauxAutorises
+{
+    width:60%;
+    border:1px solid #d9d9d9;
+    border-width:2px 2px 2px 0px;
+    border-radius:100px;
+    padding:0px 12px 0px 0px;
+    overflow:hidden;
+    margin-right:28px;
+    margin-bottom:33px;
+}
+.filtre_li-Economiques i, .filtre_li-Familial i, .filtre_li-Romantique i, .filtre_li-AnimauxAutorises i
+{
+    display:inline-block;
+    width:22px;
+    height:22px;
+    text-align:center;
+}
+
+.italic2
+{
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.IconInformation i   /* Cercle Icon Information */
+{
+    display:flex;
+    border:1px solid #d9d9d9;
+    border-radius:100%;
+    margin-right:13px;
+    width:20px;
+    height:20px;
+    font-size:60%;
+    align-items:center;
+    justify-content:center;
+    margin-left:5.5%;
+}
+
+.BlocHergementetPopulaire   /* Section Hébergement + Les plus populaires pour les mettres en Flex  */ 
+{
+    width:100%;
+    display:flex;
+    flex-direction:column-reverse;
+    margin-bottom:0px;
+    padding-left:0px;
+}   
+
+#HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
+{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    padding-left:0px;
+    padding-right:0px;
+    background-color:white;
+    margin-top:5px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#HebergementaMarseille .content .MargeBottomCarte, .MargeBottomCarte2
+{
+    margin-bottom:13px;
+}
+.MargeBottomCarte3
+{
+    margin-bottom:23px;
+}
+
+#BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
+{
+    width:100%;
+}
+
+#HebergementaMarseille .content
+{
+    width:100%;
+    background-color:white;
+}
+.Hebergement /* Les 6 Figures de la Section Hébergement à Marseille */ 
+{
+    width:360px;
+    height:200px;
+    background-color:white;
+    border:7px solid white;
+    border-radius:35px 35px 35px 35px; 
+    box-shadow:0px 5px 20px #f2f2f2;
+    overflow:hidden;
+    margin:0px;
+    margin-bottom:0px;
+}
+
+#BlocHebergementEtPopulaireEtActivite   /* Div pour mettre le titre " Hébergement à Marseille " dans la Section " hébergement à Marseille sans Flex. 
+                                    Et pour mettre en Flex les figures et les images de la Section " Hébergement à Marseille */ 
+{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding:0px;
+    margin-bottom:26px;
+    margin-top:40px;
+    margin-left:0px;
+    margin-right:0px;
+}
+#LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
+{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    background-color:#F2F2F2;
+    padding-top:5px;
+    padding-bottom:27px;
+    padding-left:5%;
+    padding-right:5%;
+    border-radius:0px;
+}
+.Populaire  /* Figure de l'Aside"les plus populaires"   */
+{
+    width:97%;
+    height:144px;
+    margin-top:0px;
+    margin-right:0px;
+    padding-bottom:0px;
+    margin-bottom:10px;
+}
+#LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
+{
+    width:128px;
+    height:144px;
+}
+.iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
+{
+    float:right;
+    margin-right:0px;
+}
+#LesPlusPopulaires h2
+{
+    width:100%;
+}
+.MargePopulaire /* Mise en place des Figcaptions des figures de l'Aside "les plus populaires"   */
+{
+    margin-left:6%;
+}
+#LesPlusPopulaires figure i
+{
+    font-size:12px;
+}
+
+.MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
+{
+    margin-top:35px;
+}
+.AfficherPlus 
+{
+    font-weight:bold;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+#ActivitesaMarseille
+{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+#ActivitesaMarseille .content2   /* Div pour mettre le titre " Activités à Marseille " sans flex  et  aud-dessus de la Section " Activité à Marseille " */ 
+{
+    display:flex;
+    flex-direction:column;
+    margin-top:33px;
+}
+
+#ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
+{
+    width:100%;
+    height:80%;
+    object-fit:cover;
+    object-position:0% 0%;
 }
 
 #ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
 {
     width:100%;
-    height:70%;
+    height:80%;
     object-fit:cover;
-    object-position:0% 40%;
+    object-position:0% 35%;
 }
 #ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
 {
     width:100%;
-    height:auto;
+    height:80%;
     object-fit:cover;
-    object-position:0% 20%;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
 {
     width:100%;
-    height:auto;
+    height:80%;
     object-fit:cover;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
 {
     width:100%;
-    height:auto;
+    height:80%;
     object-fit:cover;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
 {
     width:100%;
-    height:auto;
-    object-fit:cover;
-    object-position:0% 20%;
+    height:80%;
+    object-position:0% 0%;
 }
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
-    width:95%;
+    width:100%;
+    height:220px;
     display:flex;
     flex-direction:column;
-    margin-bottom:20px;
-    text-align:center;
+    box-shadow:0px 5px 5px #f2f2f2;
+    margin-bottom:0px;
 }
-.Colone1
+.Colone1, .Colone3
 {
     width:100%;
-    display:flex;
-    flex-direction:column;
-}
-.Colone2
-{
-    width:100%;
+    height:243px;
     display:flex;
     flex-direction:column;
 }
-.Colone3
+.Colone2, .Colone4 
 {
     width:100%;
+    height:486px;
     display:flex;
     flex-direction:column;
 }
-.Colone4 
+
+.BoutonRechercher
 {
-    width:100%;
+    display:none;
+}
+.IconLocalisation span i /* Cercle Icon localisation */
+{
+    display:inline-block;
+    border:1px solid #0065FC ;
+    background-color:#0065FC;
+    border-width:18px;
+    border-radius:15px;
+    overflow:hidden;
+    color:white;
+    cursor:pointer;
+    width:15px;
+    height:15px;
+}
+footer
+{
+    width:92%;
     display:flex;
-    flex-direction:column; 
+    flex-direction:column;
+    background-color: #F2F2F2;
+    padding-left:8%;
+    padding-right:0px;
+    padding-top:32px;
+    padding-bottom:34px;
 }
 }
 @media screen and (max-width:375px)  /* styles pour mobiles portrait */
@@ -765,7 +1323,6 @@ h1
 body
 {
     width:100%;
-    height:auto;
     overflow-x:hidden;
 
 }
@@ -824,7 +1381,6 @@ nav li:hover a
 }
 .blue /* Pour que " s'inscrire " de la navigation soit de couleur bleu ciel et sans soulignement */
 {
-    color:#0065FC;
     font-weight:bold;
     text-decoration:none;
     float:right;
@@ -870,6 +1426,10 @@ h1
     margin-left:5.5%;
     flex-wrap:wrap;
     margin-top:0px;
+}
+#ActivitesaMarseille h2
+{
+    margin-bottom:0px;
 }
 .italic1
 {
@@ -938,7 +1498,6 @@ h1
     display:flex;
     flex-wrap:wrap;
     width:94.5%;
-    height:auto;
     list-style:none;
     align-items:center;
     padding:0px;
@@ -949,7 +1508,7 @@ h1
 }
 .filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
-    width:50%;
+    width:49%;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -961,7 +1520,7 @@ h1
 
 .filtre_li-Familial 
 {
-    width:36%;
+    width:35%;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -1066,6 +1625,7 @@ h1
 .Hebergement /* Les 6 Figures de la Section Hébergement à Marseille */ 
 {
     width:321px;
+    height:220px;
     background-color:white;
     border:7px solid white;
     border-radius:35px 35px 35px 35px; 
@@ -1102,7 +1662,7 @@ h1
 .Populaire  /* Figure de l'Aside"les plus populaires"   */
 {
     width:97%;
-    height:133px;
+    height:144px;
     margin-top:0px;
     margin-right:0px;
     padding-bottom:0px;
@@ -1111,7 +1671,7 @@ h1
 #LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
 {
     width:128px;
-    height:133px;
+    height:144px;
 }
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
 {
