@@ -587,7 +587,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 .Hebergement    /* Les 6 Figures Hébergement de la Section Hébergement à Marseille */ 
 {
-    width:450px;
+    width:400px;
 }
 #BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
@@ -602,7 +602,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 #HebergementaMarseille    /* Div Hébergement à Marseille et Id : Lien section page */
 {
-    width:100%;
+    width:56%;
     background-color:#F2F2F2;
     padding-right:20px;
     padding-left:20px;
@@ -623,9 +623,13 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 {
     margin-bottom:23px;
 }
+#LesPlusPopulaires .Populaire .img_cover {
+    overflow:hidden;
+    width:100%;
+}
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
-    width:96%;
+    width:36%;
     background-color:#F2F2F2;
     border-radius:35px 35px 35px 35px;
     padding-left:2%;
@@ -639,13 +643,13 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     flex-direction:column;
     background-color:white;
     width:97%;
-    height:21%;
+    height:24.5%;
     border:6px solid white;
     border-radius:35px 35px 35px 35px; 
     overflow:hidden;
     margin-top:0px;
     margin-left:0px;
-    margin-bottom:192px;
+    margin-bottom:98px;
     margin-right:0px;
 }
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
@@ -669,58 +673,19 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     margin-top:33px;
 }
 
-#ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
+#ActivitesaMarseille .content2 img   /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+#ActivitesaMarseille .content2 .img_cover
+{
     height:180px;
-    object-fit:inherit;
-    object-position:0% 0%;
-    border-radius:35px 35px 0px 0px; 
+    overflow:hidden;
 }
 
-#ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
-{
-    width:100%;
-    height:180px;
-    object-fit:inherit;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
-{
-    width:100%;
-    height:180px;
-    object-fit:inherit;
-    object-position:0% 0%;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
-{
-    width:100%;
-    height:180px;
-    object-fit:inherit;
-    object-position:0% 0%;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
-{
-    width:100%;
-    height:180px;
-    object-fit:inherit;
-    object-position:0% 0%;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
-{
-    width:100%;
-    height:180px;
-    object-fit:inherit;
-    object-position:0% 0%;
-    
-}
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-ParcNationalDesCalanques
 {
     width:80%;
