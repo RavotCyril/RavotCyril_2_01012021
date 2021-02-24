@@ -87,7 +87,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 .IconLocalisation /* Icon localisation contenue*/
 {
     display:inline-flex;
-    width:30rem;
+    width:auto;
     height:50px;
     overflow:auto;
     margin-bottom:20px;
@@ -139,7 +139,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     padding-left:0px;
     font-weight:bold;
     margin-bottom:30.5px;
-    width:950px;
+    width:100%;
 }
 .filtre_li /* Marge à droite de la liste à puce Filtre -Li */ 
 {
@@ -208,11 +208,11 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     width:13px;
 }
 .TextehebergementEtPopulaire
+
 {
     margin-top:5px;
     margin-bottom:5px;
-    font-size:0.88em;
-    width:135px;
+    font-size:0.88em; /*    width:135px; */
 }
 .IconInformation /* Icon Information contenue */
 {
@@ -229,11 +229,16 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     width:19px;
     text-align:center;
 }
-
-#BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
+#BlocHebergementEtPopulaireEtActivite .content .img_cover {
+    height: 128px;
+    overflow: hidden;
+}
+#BlocHebergementEtPopulaireEtActivite .content img, #LesPlusPopulaires .Populaire img  /* Image hébergement à Marseille */ 
 {
-    width:250px;
-    height:128px;
+    width:100%;
+    height:100%;
+    object-position: center;
+    object-fit: cover;
 }
 #BlocHebergementEtPopulaireEtActivite  /* Main */ 
 {
@@ -289,11 +294,9 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     margin-top:55px;
     margin-bottom:55px;
 }
-
-#LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
-{
-    width:150.5px;
-    height:170.5px;
+#LesPlusPopulaires .Populaire .img_cover {
+    overflow: hidden;
+    width: 45%;
 }
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
@@ -326,6 +329,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     display:flex;
     flex-direction:column;
     margin-left:25px;
+    width: calc( 55% - 25px );
 }
 .MargeHebergement /* Mise en place des Figcaptions des figures de la section "Hébergement de Marseille"   */
 {
@@ -869,7 +873,7 @@ h1
 {
     display:flex;
     flex-wrap:wrap;
-    width:100%;
+    width:94.5%;
     margin-left:5.5%;
 }
 .filtre_li-Economiques, .filtre_li-Romantique
@@ -1687,7 +1691,8 @@ h1
 {
     display:inline-flex;
     height:50px;
-    width:85%;
+    max-width:87%;
+    width:auto;
     overflow-x:hidden;
     overflow-y:hidden;
     overflow:hidden;
@@ -1702,7 +1707,8 @@ h1
 {
     display:flex;
     flex-direction:column;
-    width:100%;
+    width:94.5%;
+    padding:5.5%;
 }
 .filtre_li
 {
@@ -1715,18 +1721,18 @@ h1
 {
     display:flex;
     flex-wrap:wrap;
-    width:94.5%;
+    width:95%;
     list-style:none;
     align-items:center;
     padding:0px;
     font-weight:bold;
     margin-top:0px;
     margin-bottom:0px;
-    margin-left:5.5%;
+    margin-left:5%;
 }
 .filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
-    width:49%;
+    width:auto;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -1738,7 +1744,7 @@ h1
 
 .filtre_li-Familial 
 {
-    width:35%;
+    width:auto;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -1750,7 +1756,7 @@ h1
 
 .filtre_li-Romantique
 {
-    width:46%;
+    width:auto;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
@@ -1761,7 +1767,7 @@ h1
 }
 .filtre_li-AnimauxAutorises
 {
-    width:60%;
+    width:auto;
     border:1px solid #d9d9d9;
     border-width:2px 2px 2px 0px;
     border-radius:100px;
