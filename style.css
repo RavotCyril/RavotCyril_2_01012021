@@ -329,7 +329,6 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     display:flex;
     flex-direction:column;
     margin-left:25px;
-    width: calc( 55% - 25px );
 }
 .MargeHebergement /* Mise en place des Figcaptions des figures de la section "Hébergement de Marseille"   */
 {
@@ -1104,7 +1103,6 @@ nav li:hover a
     border-radius:100px;
     height:46px;
     line-height:48px;
-    width:calc(100% -56px);
     padding-left:0px;
     margin-left:0px;
     z-index:0;
@@ -1571,7 +1569,6 @@ nav li:hover a
     border-radius:100px;
     height:46px;
     line-height:48px;
-    width:calc(100% -56px);
     padding-left:0px;
     margin-left:0px;
     z-index:0;
