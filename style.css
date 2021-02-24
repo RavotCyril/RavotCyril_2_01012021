@@ -880,11 +880,29 @@ h1
 {
     margin-bottom:0px;
 }
+
+#BlocHebergementEtPopulaireEtActivite .content .img_cover 
+{
+    height:140px;
+    overflow:hidden;
+}
 #BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
     width:100%;
-    height:60%;
-    border-radius:35px 35px 0px 0px; 
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
+{
+    margin-top:140px;
+}
+#LesPlusPopulaires .Populaire img  /* Image Les Plus Populaires */ 
+{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    object-position:center;
 }
 #HebergementaMarseille .content .MargeBottomCarte, .MargeBottomCarte2
 {
@@ -908,6 +926,17 @@ h1
     float:right;
     margin-right:0px;
 }
+.bold1 /*  Tous les titres des figures de la session " Hébergement à Marseille" en Gras */
+{
+    font-weight:bold;
+    margin-top:13px;
+    margin-bottom:10px;
+    font-size:12px;
+}
+.TextehebergementEtPopulaire
+{
+    font-size:0.73em;
+}
 #LesPlusPopulaires
 {
     width:89%;
@@ -921,10 +950,7 @@ h1
     width:98.4%;
     margin-right:0px;
 }
-#LesPlusPopulaires .Populaire img
-{
-    width:55%;
-}
+
 #ActivitesaMarseille
 {
     width:89%;
@@ -937,58 +963,23 @@ h1
     flex-direction:column;
     margin-top:33px;
 }
-
-#ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
+#ActivitesaMarseille .content2 img   /* image Activités à Marseille */ 
 {
     width:100%;
-    height:80%;
-    object-fit:inherit;
-    object-position:0% 0%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
     border-radius:35px 35px 0px 0px; 
 }
-
-#ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
+#ActivitesaMarseille .content2 .img_cover
 {
+    height:180px;
+    overflow:hidden;
+}
+#LesPlusPopulaires .Populaire .img_cover 
+{
+    overflow:hidden;
     width:100%;
-    height:80%;
-    object-fit:inherit;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
-{
-    width:100%;
-    height:80%;
-    object-fit:inherit;
-    object-position:0% 0%;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
-{
-    width:100%;
-    height:80%;
-    object-fit:inherit;
-    object-position:0% 0%;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
-{
-    width:100%;
-    height:80%;
-    object-fit:inherit;
-    object-position:0% 0%;
-    border-radius:35px 35px 0px 0px; 
-
-}
-#ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
-{
-    width:100;
-    height:80%;
-    object-fit:inherit;
-    object-position:0% 0%;
-    
 }
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
@@ -1298,11 +1289,19 @@ h1
 {
     margin-bottom:23px;
 }
-
 #BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
     width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
 }
+#BlocHebergementEtPopulaireEtActivite .content .img_cover
+{
+    height:140px;
+    overflow:hidden;
+}
+
 
 #HebergementaMarseille .content
 {
@@ -1334,6 +1333,13 @@ h1
     margin-left:0px;
     margin-right:0px;
 }
+.bold1 /*  Tous les titres des figures de la session " Hébergement à Marseille" en Gras */
+{
+    font-weight:bold;
+    margin-top:13px;
+    margin-bottom:10px;
+    font-size:15px;
+}
 #LesPlusPopulaires    /*  Aside id "les plus populaires" aligné à droite  */
 {
     width:90%;
@@ -1357,8 +1363,15 @@ h1
 }
 #LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
 {
-    width:128px;
-    height:144px;
+    width:100%;
+    height:100%;
+    object-position:center;
+    object-fit:cover;
+}
+#LesPlusPopulaires .Populaire .img_cover
+{
+    width:200px;
+    overflow:hidden;
 }
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
 {
@@ -1401,48 +1414,19 @@ h1
     margin-top:33px;
 }
 
-#ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
+#ActivitesaMarseille .content2 img     /* image FortDePomegues  */ 
 {
     width:100%;
-    height:80%;
+    height:100%;
     object-fit:cover;
-    object-position:0% 0%;
+    object-position:center;
+}
+#ActivitesaMarseille .content2 .img_cover
+{
+    height:180px;
+    overflow:hidden;
 }
 
-#ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 35%;
-}
-#ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 0%;
-}
-#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 0%;
-}
-#ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 0%;
-}
-#ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
-{
-    width:100%;
-    height:80%;
-    object-position:0% 0%;
-}
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
     width:100%;
@@ -1784,6 +1768,7 @@ h1
 
 #HebergementaMarseille .content .MargeBottomCarte, .MargeBottomCarte2
 {
+    width:98%;
     margin-bottom:13px;
 }
 .MargeBottomCarte3
@@ -1794,8 +1779,15 @@ h1
 #BlocHebergementEtPopulaireEtActivite .content img  /* Image hébergement à Marseille */ 
 {
     width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
 }
-
+#BlocHebergementEtPopulaireEtActivite .content .img_cover
+{
+    height:140px;
+    overflow:hidden;
+}
 #HebergementaMarseille .content
 {
     width:100%;
@@ -1803,7 +1795,7 @@ h1
 }
 .Hebergement /* Les 6 Figures de la Section Hébergement à Marseille */ 
 {
-    width:321px;
+    width:98%;
     height:220px;
     background-color:white;
     border:7px solid white;
@@ -1849,9 +1841,18 @@ h1
 }
 #LesPlusPopulaires .Populaire img     /* Les 3 Images de l'Aside "les plus populaires"  */ 
 {
+    width:100%;
+    height:100%;
+    object-position:center;
+    object-fit:cover;
+}
+#LesPlusPopulaires .Populaire .img_cover
+{
     width:128px;
     height:144px;
+    overflow:hidden;
 }
+
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
 {
     float:right;
@@ -1896,45 +1897,16 @@ h1
 #ActivitesaMarseille .Activites-VieuxPort img   /* image ParcNationalDesCalanques et VieuxPort */ 
 {
     width:100%;
-    height:80%;
+    height:100%;
     object-fit:cover;
-    object-position:0% 0%;
+    object-position:center;
+}
+#ActivitesaMarseille .Activites-VieuxPort .img_cover
+{
+    height:180px;
+    overflow: hidden;
 }
 
-#ActivitesaMarseille .Activites-FortDePomegues img     /* image FortDePomegues  */ 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 35%;
-}
-#ActivitesaMarseille .Activites-IlesDuFrioul img      /* image Ile Du Frioul */ 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 0%;
-}
-#ActivitesaMarseille .Activites-ParcNationalDesCalanques img 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 0%;
-}
-#ActivitesaMarseille .Activites-NotreDameDeLaGarde img    /* image NotreDameDeLaGarde*/ 
-{
-    width:100%;
-    height:80%;
-    object-fit:cover;
-    object-position:0% 0%;
-}
-#ActivitesaMarseille .Activites-ParcLongchamp img     /* image ParcLongChamp */ 
-{
-    width:100%;
-    height:80%;
-    object-position:0% 0%;
-}
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
     width:100%;
