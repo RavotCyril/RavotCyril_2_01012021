@@ -580,7 +580,7 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
     display:flex;
     flex-wrap:wrap;
 }
-.filtre_li-Economiques
+.filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises
 {
     margin-bottom:10px;
 }
@@ -762,6 +762,7 @@ header
 nav /* Menu navigation " activités " et " Hébergement " sans surlignement et en couleur noir et non rouge bordeaux comme par défaut"  */
 {
     display:flex;
+    float:none;
     width:100%;
     text-decoration:none;
     color:#0065FC;
@@ -811,7 +812,8 @@ li:last-child  /* Pour que le " s'inscrire " de navigation n'aie aucune marge */
 }
 h1
 {
-    width:96%;
+    width:94.5%;
+    display:flex;
     flex-wrap:wrap;
     margin-left:5.5%;
 }
@@ -823,6 +825,14 @@ h1
 {
     margin-left:5.5%;
 }
+.filtre_li
+{
+    font-weight:bold;
+    margin-left:0px;
+    margin-top:0px;
+    padding-right:0px;
+}
+
 .OrdreLi
 {
     display:flex;
@@ -830,7 +840,7 @@ h1
     width:94.5%;
     margin-left:5.5%;
 }
-.filtre_li-Economiques, .filtre_li-Romantique
+.filtre_li-Economiques, .filtre_li-Familial, .filtre_li-Romantique, .filtre_li-AnimauxAutorises
 {
     margin-bottom:10px;
 }
@@ -894,7 +904,7 @@ h1
 }
 .MargeStar /*  Marge des étoiles dans l'aside " Les plus populaires "  */
 {
-    margin-top:140px;
+    margin-top:150px;
 }
 #LesPlusPopulaires .Populaire img  /* Image Les Plus Populaires */ 
 {
@@ -949,7 +959,11 @@ h1
     width:98.4%;
     margin-right:0px;
 }
-
+.MargePopulaire /* Mise en place des Figcaptions des figures de l'Aside "les plus populaires"   */
+{
+    margin-left:6%;
+    width:33%;
+}
 #ActivitesaMarseille
 {
     width:89%;
@@ -977,8 +991,8 @@ h1
 }
 #LesPlusPopulaires .Populaire .img_cover 
 {
+    width:67%;
     overflow:hidden;
-    width:100%;
 }
 #ActivitesaMarseille .Activites-VieuxPort, .Activites-FortDePomegues, .Activites-IlesDuFrioul, .Activites-ParcNationalDesCalanques, .Activites-NotreDameDeLaGarde, .Activites-ParcLongchamp
 {
@@ -1160,12 +1174,12 @@ h1
 {
     display:flex;
     flex-direction:column;
-    width:100%;
+    width:94.5%;
 }
 .filtre_li
 {
     font-weight:bold;
-    margin-left:5.5%;
+    margin-left:0px;
     margin-top:0px;
 }
 
@@ -1180,7 +1194,7 @@ h1
     font-weight:bold;
     margin-top:0px;
     margin-bottom:0px;
-    margin-left:5.5%;
+    margin-left:0px;
 }
 .filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
@@ -1368,7 +1382,7 @@ h1
 }
 #LesPlusPopulaires .Populaire .img_cover
 {
-    width:200px;
+    width:167px;
     overflow:hidden;
 }
 .iconPopulaire  /* Mise en place de l'Icon de l'Aside "les plus populaires"   */
@@ -1383,6 +1397,7 @@ h1
 .MargePopulaire /* Mise en place des Figcaptions des figures de l'Aside "les plus populaires"   */
 {
     margin-left:6%;
+    width:49%
 }
 #LesPlusPopulaires figure i
 {
@@ -1582,6 +1597,7 @@ h1
 {
     width:94%;
     margin-left:5.5%;
+    display:flex;
     flex-wrap:wrap;
     margin-top:0px;
 }
@@ -1644,13 +1660,14 @@ h1
     display:flex;
     flex-direction:column;
     width:94.5%;
-    padding:5.5%;
+    margin-left:5.5%;
 }
 .filtre_li
 {
     font-weight:bold;
-    margin-left:5.5%;
+    margin-left:0px;
     margin-top:0px;
+    padding-right:0px;
 }
 
 .Filtres /* Filtre balise Ul Alignemement des différents filtres avec Flex cote à cote et mise en Gras.*/ 
@@ -1664,7 +1681,7 @@ h1
     font-weight:bold;
     margin-top:0px;
     margin-bottom:0px;
-    margin-left:5%;
+    margin-left:0px;
 }
 .filtre_li-Economiques /* Bordure Filtres: Economique, Familial, Romantique ...*/ 
 {
@@ -1782,7 +1799,7 @@ h1
 }
 #BlocHebergementEtPopulaireEtActivite .content .img_cover
 {
-    height:140px;
+    height:128px;
     overflow:hidden;
 }
 #HebergementaMarseille .content
@@ -1846,7 +1863,6 @@ h1
 #LesPlusPopulaires .Populaire .img_cover
 {
     width:128px;
-    height:144px;
     overflow:hidden;
 }
 
@@ -1862,6 +1878,7 @@ h1
 .MargePopulaire /* Mise en place des Figcaptions des figures de l'Aside "les plus populaires"   */
 {
     margin-left:6%;
+    width:54%;
 }
 #LesPlusPopulaires figure i
 {
