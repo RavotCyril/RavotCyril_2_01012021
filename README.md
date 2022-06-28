@@ -1,4 +1,6 @@
-Transformer une maquette en site web
+Reservia 
+
+Transformer une maquette en site web avec HTML & CSS 
 
 Compétences :  
 
